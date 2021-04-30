@@ -133,10 +133,10 @@ Wire Wire Line
 Wire Wire Line
 	1216 3267 1266 3267
 $Comp
-L Connector:TestPoint TP3
+L Connector:TestPoint Enable1
 U 1 1 60E571E2
 P 1216 3267
-F 0 "TP3" V 1241 3292 50  0000 C CNN
+F 0 "Enable1" V 1241 3292 50  0000 C CNN
 F 1 "TestPoint" V 1141 3242 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1416 3267 50  0001 C CNN
 F 3 "~" H 1416 3267 50  0001 C CNN
@@ -707,94 +707,70 @@ F 3 "~" H 4363 3207 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R9
-U 1 1 60E57344
-P 3984 1660
-F 0 "R9" H 3859 1735 50  0000 L CNN
-F 1 "10k" H 4034 1610 50  0000 L CNN
-F 2 "storage:R_10K" H 3984 1660 50  0001 C CNN
-F 3 "~" H 3984 1660 50  0001 C CNN
-	1    3984 1660
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR0117
-U 1 1 60E5734A
-P 3984 1510
-F 0 "#PWR0117" H 3984 1360 50  0001 C CNN
-F 1 "+3V3" H 3999 1683 50  0000 C CNN
-F 2 "" H 3984 1510 50  0001 C CNN
-F 3 "" H 3984 1510 50  0001 C CNN
-	1    3984 1510
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0118
 U 1 1 60E57350
-P 3984 2110
-F 0 "#PWR0118" H 3984 1860 50  0001 C CNN
-F 1 "GND" H 3984 1985 50  0000 C CNN
-F 2 "" H 3984 2110 50  0001 C CNN
-F 3 "" H 3984 2110 50  0001 C CNN
-	1    3984 2110
+P 4163 2293
+F 0 "#PWR0118" H 4163 2043 50  0001 C CNN
+F 1 "GND" H 4163 2168 50  0000 C CNN
+F 2 "" H 4163 2293 50  0001 C CNN
+F 3 "" H 4163 2293 50  0001 C CNN
+	1    4163 2293
 	1    0    0    -1  
 $EndComp
-Text GLabel 4903 3257 0    50   Output ~ 0
-RESET
 $Comp
 L power:+3V3 #PWR0119
 U 1 1 60E57365
-P 4580 1516
-F 0 "#PWR0119" H 4580 1366 50  0001 C CNN
-F 1 "+3V3" H 4595 1689 50  0000 C CNN
-F 2 "" H 4580 1516 50  0001 C CNN
-F 3 "" H 4580 1516 50  0001 C CNN
-	1    4580 1516
+P 4730 1482
+F 0 "#PWR0119" H 4730 1332 50  0001 C CNN
+F 1 "+3V3" H 4745 1655 50  0000 C CNN
+F 2 "" H 4730 1482 50  0001 C CNN
+F 3 "" H 4730 1482 50  0001 C CNN
+	1    4730 1482
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 60E5736B
-P 4580 1841
-F 0 "#PWR0120" H 4580 1591 50  0001 C CNN
-F 1 "GND" H 4580 1716 50  0000 C CNN
-F 2 "" H 4580 1841 50  0001 C CNN
-F 3 "" H 4580 1841 50  0001 C CNN
-	1    4580 1841
+P 4730 1807
+F 0 "#PWR0120" H 4730 1557 50  0001 C CNN
+F 1 "GND" H 4730 1682 50  0000 C CNN
+F 2 "" H 4730 1807 50  0001 C CNN
+F 3 "" H 4730 1807 50  0001 C CNN
+	1    4730 1807
 	1    0    0    -1  
 $EndComp
-Text GLabel 5080 1566 2    50   Input ~ 0
+Text GLabel 5230 1532 2    50   Input ~ 0
 VCC
 Wire Wire Line
-	4905 1816 4905 1791
+	5055 1782 5055 1757
 Wire Wire Line
-	4580 1816 4905 1816
+	4730 1782 5055 1782
 Wire Wire Line
-	4905 1566 4905 1591
+	5055 1532 5055 1557
 Wire Wire Line
-	4580 1566 4905 1566
+	4730 1532 5055 1532
 $Comp
 L Device:C_Small C18
 U 1 1 60E57376
-P 4905 1691
-F 0 "C18" H 4955 1741 50  0000 L CNN
-F 1 "4.7uF" H 4955 1641 50  0000 L CNN
-F 2 "storage:C_4.7uF" H 4905 1691 50  0001 C CNN
-F 3 "~" H 4905 1691 50  0001 C CNN
-	1    4905 1691
+P 5055 1657
+F 0 "C18" H 5105 1707 50  0000 L CNN
+F 1 "4.7uF" H 5105 1607 50  0000 L CNN
+F 2 "storage:C_4.7uF" H 5055 1657 50  0001 C CNN
+F 3 "~" H 5055 1657 50  0001 C CNN
+	1    5055 1657
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5080 1566 4905 1566
-Connection ~ 4905 1566
+	5230 1532 5055 1532
+Connection ~ 5055 1532
 Text GLabel 6153 1787 1    50   Output ~ 0
 VCC
 Text GLabel 4903 3157 0    50   Output ~ 0
 VCC
 Text GLabel 3973 2957 0    50   Output ~ 0
-DP0
+D0+
 Text GLabel 3973 3057 0    50   Output ~ 0
-DMO
+D0-
 $Comp
 L Device:C_Small C15
 U 1 1 60E57384
@@ -1050,34 +1026,34 @@ Wire Wire Line
 Wire Wire Line
 	8528 2469 8603 2469
 Text GLabel 5653 4507 3    50   Input ~ 0
-DM1
+D1-
 Text GLabel 5753 4507 3    50   Input ~ 0
-DP1
+D1+
 Text GLabel 6053 4507 3    50   Input ~ 0
-DM2
+D2-
 Text GLabel 6153 4507 3    50   Input ~ 0
-DP2
+D2+
 Text GLabel 6903 3057 2    50   Input ~ 0
-DM4
+D4-
 Text GLabel 6903 3457 2    50   Input ~ 0
-DM3
+D3-
 Text GLabel 6903 3357 2    50   Input ~ 0
-DP3
+D3+
 Text GLabel 6903 2957 2    50   Input ~ 0
-DP4
+D4+
 $Comp
 L Device:CP_Small C17
 U 1 1 60E57458
-P 4580 1691
-F 0 "C17" H 4668 1737 50  0000 L CNN
-F 1 "4.7uF" H 4668 1646 50  0000 L CNN
-F 2 "storage:C_4.7uF" H 4580 1691 50  0001 C CNN
-F 3 "~" H 4580 1691 50  0001 C CNN
-	1    4580 1691
+P 4730 1657
+F 0 "C17" H 4818 1703 50  0000 L CNN
+F 1 "4.7uF" H 4818 1612 50  0000 L CNN
+F 2 "storage:C_4.7uF" H 4730 1657 50  0001 C CNN
+F 3 "~" H 4730 1657 50  0001 C CNN
+	1    4730 1657
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4580 1791 4580 1816
+	4730 1757 4730 1782
 $Comp
 L Device:CP_Small C25
 U 1 1 60E57460
@@ -1219,13 +1195,13 @@ F 3 "~" H 7149 4548 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 6499 4548 0    50   Output ~ 0
-DM1
+D1-
 Text GLabel 6499 4698 0    50   Output ~ 0
-DP1
+D1+
 Text GLabel 6499 5398 0    50   Output ~ 0
-DM2
+D2-
 Text GLabel 6499 5548 0    50   Output ~ 0
-DP2
+D2+
 $Comp
 L Device:C_Small C21
 U 1 1 60E574EA
@@ -1491,7 +1467,7 @@ Wire Wire Line
 Wire Wire Line
 	7649 5848 7649 5898
 Text GLabel 8124 4698 2    50   Input ~ 0
-DP_downstream1
+D_DS_1_+
 Wire Wire Line
 	7374 4698 8124 4698
 Connection ~ 7374 4698
@@ -1499,11 +1475,11 @@ Wire Wire Line
 	8124 4548 7649 4548
 Connection ~ 7649 4548
 Text GLabel 8099 5548 2    50   Input ~ 0
-DP_downstream2
+D_DS_2_+
 Text GLabel 10311 888  0    50   Output ~ 0
-DM_downstream1
+D_DS_1_-
 Text GLabel 10311 788  0    50   Output ~ 0
-DP_downstream1
+D_DS_1_+
 Wire Wire Line
 	9436 588  10436 588 
 Wire Wire Line
@@ -1511,9 +1487,9 @@ Wire Wire Line
 Wire Wire Line
 	10311 888  10436 888 
 Text GLabel 10323 1840 0    50   Output ~ 0
-DM_downstream2
+D_DS_2_-
 Text GLabel 10323 1740 0    50   Output ~ 0
-DP_downstream2
+D_DS_2_+
 Wire Wire Line
 	10323 1740 10448 1740
 Wire Wire Line
@@ -1529,11 +1505,11 @@ Connection ~ 7374 5548
 Wire Wire Line
 	7374 5548 7374 5648
 Text GLabel 8099 5398 2    50   Input ~ 0
-DM_downstream2
+D_DS_2_-
 Text GLabel 3922 6050 0    50   Output ~ 0
-DM_downstream2
+D_DS_2_-
 Text GLabel 3922 5850 0    50   Output ~ 0
-DP_downstream2
+D_DS_2_+
 Wire Wire Line
 	3922 5850 4072 5850
 Wire Wire Line
@@ -1591,11 +1567,11 @@ $EndComp
 Wire Wire Line
 	5272 5850 5322 5850
 Text GLabel 5422 5950 2    50   Output ~ 0
-DM_downstream1
+D_DS_1_-
 Wire Wire Line
 	5272 5950 5422 5950
 Text GLabel 5422 5750 2    50   Output ~ 0
-DP_downstream1
+D_DS_1_+
 Wire Wire Line
 	5272 5750 5422 5750
 Wire Notes Line
@@ -1927,9 +1903,9 @@ F 3 "~" H 1766 1117 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 2641 1217 2    50   Input ~ 0
-DMO
+D0-
 Text GLabel 2641 1117 2    50   Input ~ 0
-DP0
+D0+
 Connection ~ 2991 892 
 Wire Wire Line
 	2991 842  2991 892 
@@ -2137,17 +2113,17 @@ F 3 "" H 6091 7517 50  0001 C CNN
 	1    6091 7517
 	1    0    0    -1  
 $EndComp
-Connection ~ 4580 1566
+Connection ~ 4730 1532
 Wire Wire Line
-	4580 1566 4580 1591
-Connection ~ 4580 1816
+	4730 1532 4730 1557
+Connection ~ 4730 1782
 Wire Wire Line
-	4580 1816 4580 1841
+	4730 1782 4730 1807
 Connection ~ 6924 4698
 Wire Wire Line
 	6499 4698 6924 4698
 Text GLabel 8124 4548 2    50   Input ~ 0
-DM_downstream1
+D_DS_1_-
 Wire Wire Line
 	6753 2957 6903 2957
 Wire Wire Line
@@ -2245,8 +2221,6 @@ Wire Wire Line
 	4883 3657 4883 3717
 NoConn ~ 4953 3357
 Wire Wire Line
-	4903 3257 4953 3257
-Wire Wire Line
 	4903 3157 4953 3157
 $Comp
 L power:GND #PWR0121
@@ -2331,30 +2305,19 @@ Wire Wire Line
 	5860 920  5920 920 
 Wire Wire Line
 	5860 1020 5920 1020
-Wire Wire Line
-	3984 1510 3984 1560
-Wire Wire Line
-	3984 1760 3984 1810
-Wire Wire Line
-	3984 2060 3984 2110
 $Comp
 L Device:C_Small C14
 U 1 1 60E57356
-P 3984 1960
-F 0 "C14" H 4034 2010 50  0000 L CNN
-F 1 "0.1uF" H 4034 1910 50  0000 L CNN
-F 2 "storage:C_0.1uF" H 3984 1960 50  0001 C CNN
-F 3 "~" H 3984 1960 50  0001 C CNN
-	1    3984 1960
+P 4163 1933
+F 0 "C14" H 4213 1983 50  0000 L CNN
+F 1 "0.1uF" H 4213 1883 50  0000 L CNN
+F 2 "storage:C_0.1uF" H 4163 1933 50  0001 C CNN
+F 3 "~" H 4163 1933 50  0001 C CNN
+	1    4163 1933
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3984 1810 4134 1810
-Connection ~ 3984 1810
-Wire Wire Line
-	3984 1810 3984 1860
-Wire Wire Line
-	4580 1516 4580 1566
+	4730 1482 4730 1532
 Wire Wire Line
 	6053 1746 6053 1857
 $Comp
@@ -2374,7 +2337,7 @@ F 9 "10129381-906001BLF" H 4691 242 50  0001 L CNN "Manufacturer_Part_Number"
 	1    4041 842 
 	1    0    0    -1  
 $EndComp
-Text GLabel 4134 1810 2    50   Input ~ 0
+Text GLabel 4319 1783 2    50   Input ~ 0
 RESET
 $Comp
 L Device:R_Small R16
@@ -2388,9 +2351,9 @@ F 3 "~" H 9528 5807 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 8878 5807 0    50   Output ~ 0
-DM4
+D4-
 Text GLabel 8878 5957 0    50   Output ~ 0
-DP4
+D4+
 $Comp
 L Device:C_Small C28
 U 1 1 60C926DF
@@ -2518,7 +2481,7 @@ Wire Wire Line
 Wire Wire Line
 	10028 6257 10028 6307
 Text GLabel 10503 5957 2    50   Input ~ 0
-DP_downstream4
+D_DS_4_+
 Wire Wire Line
 	9753 5957 10503 5957
 Connection ~ 9753 5957
@@ -2529,7 +2492,7 @@ Connection ~ 9303 5957
 Wire Wire Line
 	8878 5957 9303 5957
 Text GLabel 10503 5807 2    50   Input ~ 0
-DM_downstream4
+D_DS_4_-
 $Comp
 L Device:R_Small R14
 U 1 1 60CB2347
@@ -2542,9 +2505,9 @@ F 3 "~" H 9518 5053 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 8868 5053 0    50   Output ~ 0
-DM3
+D3-
 Text GLabel 8868 5203 0    50   Output ~ 0
-DP3
+D3+
 $Comp
 L Device:C_Small C27
 U 1 1 60CB234F
@@ -2672,7 +2635,7 @@ Wire Wire Line
 Wire Wire Line
 	10018 5503 10018 5553
 Text GLabel 10493 5203 2    50   Input ~ 0
-DP_downstream3
+D_DS_3_+
 Wire Wire Line
 	9743 5203 10493 5203
 Connection ~ 9743 5203
@@ -2683,7 +2646,7 @@ Connection ~ 9293 5203
 Wire Wire Line
 	8868 5203 9293 5203
 Text GLabel 10493 5053 2    50   Input ~ 0
-DM_downstream3
+D_DS_3_-
 Text GLabel 8550 2269 2    50   Input ~ 0
 OUT3
 Wire Wire Line
@@ -2755,26 +2718,15 @@ Connection ~ 10748 3122
 Wire Wire Line
 	10748 3122 10748 3147
 Text GLabel 10323 2797 0    50   Output ~ 0
-DM_downstream3
+D_DS_3_-
 Text GLabel 10323 2697 0    50   Output ~ 0
-DP_downstream3
+D_DS_3_+
 Wire Wire Line
 	10323 2697 10448 2697
 Wire Wire Line
 	10323 2797 10448 2797
 Wire Wire Line
 	9448 2497 10448 2497
-$Comp
-L Connector:USB_A PortD1
-U 1 1 60FB1814
-P 10761 3653
-F 0 "PortD1" H 10531 3642 50  0000 R CNN
-F 1 "USB_A" H 10531 3551 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 10911 3603 50  0001 C CNN
-F 3 " ~" H 10911 3603 50  0001 C CNN
-	1    10761 3653
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Device:CP_Small C32
 U 1 1 60FB181A
@@ -2825,9 +2777,9 @@ Connection ~ 10761 4078
 Wire Wire Line
 	10761 4078 10761 4103
 Text GLabel 10336 3753 0    50   Output ~ 0
-DM_downstream4
+D_DS_4_-
 Text GLabel 10336 3653 0    50   Output ~ 0
-DP_downstream4
+D_DS_4_+
 Wire Wire Line
 	10336 3653 10461 3653
 Wire Wire Line
@@ -2842,4 +2794,76 @@ Wire Notes Line
 	9046 1443 9046 1438
 Wire Notes Line
 	8843 1443 9046 1443
+$Comp
+L Connector:USB_A PortD1
+U 1 1 60FB1814
+P 10761 3653
+F 0 "PortD1" H 10531 3642 50  0000 R CNN
+F 1 "USB_A" H 10531 3551 50  0000 R CNN
+F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 10911 3603 50  0001 C CNN
+F 3 " ~" H 10911 3603 50  0001 C CNN
+	1    10761 3653
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10861 4053 10861 4078
+$Comp
+L Switch:SW_MEC_5E SW1
+U 1 1 60A6D30D
+P 3989 2053
+F 0 "SW1" V 4039 2043 50  0000 C CNN
+F 1 "Reset" V 3929 2013 50  0000 C CNN
+F 2 "SamacSys_Parts:FSM4JH" H 3989 2353 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3989 2353 50  0001 C CNN
+	1    3989 2053
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3989 2253 4163 2253
+Wire Wire Line
+	4163 2033 4163 2253
+Connection ~ 4163 2253
+Wire Wire Line
+	4163 2253 4163 2293
+NoConn ~ 3889 2253
+NoConn ~ 3889 1853
+$Comp
+L Device:R_Small R9
+U 1 1 60E57344
+P 4163 1616
+F 0 "R9" H 4038 1691 50  0000 L CNN
+F 1 "10k" H 4213 1566 50  0000 L CNN
+F 2 "storage:R_10K" H 4163 1616 50  0001 C CNN
+F 3 "~" H 4163 1616 50  0001 C CNN
+	1    4163 1616
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 60E5734A
+P 4163 1483
+F 0 "#PWR0117" H 4163 1333 50  0001 C CNN
+F 1 "+3V3" H 4178 1656 50  0000 C CNN
+F 2 "" H 4163 1483 50  0001 C CNN
+F 3 "" H 4163 1483 50  0001 C CNN
+	1    4163 1483
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4163 1483 4163 1516
+Wire Wire Line
+	3989 1853 3989 1783
+Text GLabel 4903 3257 0    50   Output ~ 0
+RESET
+Wire Wire Line
+	4953 3257 4903 3257
+Wire Wire Line
+	4319 1783 4163 1783
+Wire Wire Line
+	4163 1716 4163 1783
+Connection ~ 4163 1783
+Wire Wire Line
+	4163 1783 3989 1783
+Wire Wire Line
+	4163 1833 4163 1783
 $EndSCHEMATC
