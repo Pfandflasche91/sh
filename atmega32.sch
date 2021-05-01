@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U1
-U 1 1 608F4D39
-P 8250 3950
-F 0 "U1" H 8250 2361 50  0000 C CNN
-F 1 "ATmega328P-AU" H 8250 2270 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 8250 3950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 8250 3950 50  0001 C CNN
-	1    8250 3950
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_B_Micro J1
 U 1 1 608F6E0E
 P 900 1150
@@ -34,17 +23,6 @@ F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1050 1100 50  0001 C CNN
 F 3 "~" H 1050 1100 50  0001 C CNN
 	1    900  1150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D1
-U 1 1 608FC2D3
-P 4100 3600
-F 0 "D1" H 4101 3713 50  0000 C CNN
-F 1 "RX" H 4102 3513 50  0000 C CNN
-F 2 "storage:LED_WL-SMCW" V 4100 3600 50  0001 C CNN
-F 3 "~" V 4100 3600 50  0001 C CNN
-	1    4100 3600
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R1
@@ -67,17 +45,6 @@ F 2 "storage:R_1K" H 4450 3900 50  0001 C CNN
 F 3 "~" H 4450 3900 50  0001 C CNN
 	1    4450 3900
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D2
-U 1 1 608E208B
-P 4450 3600
-F 0 "D2" H 4451 3713 50  0000 C CNN
-F 1 "TX" H 4452 3513 50  0000 C CNN
-F 2 "storage:LED_WL-SMCW" V 4450 3600 50  0001 C CNN
-F 3 "~" V 4450 3600 50  0001 C CNN
-	1    4450 3600
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4100 3700 4100 3800
@@ -102,12 +69,8 @@ Wire Wire Line
 	1350 1150 1200 1150
 Wire Wire Line
 	1200 1250 1350 1250
-Text GLabel 1750 950  2    50   Input ~ 0
-VBUS
 Wire Wire Line
 	1200 950  1350 950 
-Text GLabel 1000 1900 2    50   Input ~ 0
-D-
 $Comp
 L Device:R_Small R3
 U 1 1 608F0F30
@@ -127,9 +90,6 @@ Wire Wire Line
 	900  1900 800  1900
 Wire Wire Line
 	800  1900 800  1850
-Wire Wire Line
-	1000 1900 900  1900
-Connection ~ 900  1900
 $Comp
 L power:GND #PWR0103
 U 1 1 608F22D1
@@ -155,13 +115,6 @@ F 3 "" H 2750 2550 50  0001 C CNN
 	1    2750 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 2950 2950 2900
-Wire Wire Line
-	2950 2900 2750 2900
-Connection ~ 2750 2900
-Wire Wire Line
-	2750 2900 2750 2950
 $Comp
 L Device:Fuse F1
 U 1 1 6091A12B
@@ -433,17 +386,6 @@ F 3 "" H 4450 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Small D3
-U 1 1 6099BBD8
-P 4800 3600
-F 0 "D3" H 4801 3713 50  0000 C CNN
-F 1 "3V3_on" H 4802 3513 50  0000 C CNN
-F 2 "storage:LED_WL-SMCW" V 4800 3600 50  0001 C CNN
-F 3 "~" V 4800 3600 50  0001 C CNN
-	1    4800 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small R6
 U 1 1 6099D4B1
 P 4800 3900
@@ -537,37 +479,37 @@ Wire Wire Line
 $Comp
 L Device:R_Small R7
 U 1 1 60A6D59C
-P 7350 4450
-F 0 "R7" V 7400 4550 50  0000 L CNN
-F 1 "1K" V 7400 4250 50  0000 L CNN
-F 2 "storage:R_1K" H 7350 4450 50  0001 C CNN
-F 3 "~" H 7350 4450 50  0001 C CNN
-	1    7350 4450
+P 7200 3400
+F 0 "R7" V 7250 3500 50  0000 L CNN
+F 1 "1K" V 7250 3200 50  0000 L CNN
+F 2 "storage:R_1K" H 7200 3400 50  0001 C CNN
+F 3 "~" H 7200 3400 50  0001 C CNN
+	1    7200 3400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R8
 U 1 1 60A6FEB1
-P 7350 4550
-F 0 "R8" V 7400 4650 50  0000 L CNN
-F 1 "1K" V 7400 4350 50  0000 L CNN
-F 2 "storage:R_1K" H 7350 4550 50  0001 C CNN
-F 3 "~" H 7350 4550 50  0001 C CNN
-	1    7350 4550
+P 7200 3500
+F 0 "R8" V 7250 3600 50  0000 L CNN
+F 1 "1K" V 7250 3300 50  0000 L CNN
+F 2 "storage:R_1K" H 7200 3500 50  0001 C CNN
+F 3 "~" H 7200 3500 50  0001 C CNN
+	1    7200 3500
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7050 4450 0    50   Output ~ 0
+Text GLabel 6900 3400 0    50   Output ~ 0
 TXD
 Wire Wire Line
-	7050 4450 7250 4450
-Text GLabel 7050 4550 0    50   Input ~ 0
+	6900 3400 7100 3400
+Text GLabel 6900 3500 0    50   Input ~ 0
 RXD
 Wire Wire Line
-	7050 4550 7250 4550
+	6900 3500 7100 3500
 Wire Wire Line
-	7450 4450 7650 4450
+	7300 3400 7500 3400
 Wire Wire Line
-	7450 4550 7650 4550
+	7300 3500 7500 3500
 $Comp
 L Device:C_Small C3
 U 1 1 608FED1E
@@ -624,9 +566,6 @@ F 3 "" H 1700 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 1050 1700 950 
-Connection ~ 1700 950 
-Wire Wire Line
-	1700 950  1750 950 
 Wire Wire Line
 	1700 1300 1700 1250
 Wire Wire Line
@@ -649,19 +588,6 @@ $EndComp
 Wire Wire Line
 	2250 2900 2250 2950
 Connection ~ 2250 2900
-Wire Wire Line
-	2550 2600 2750 2600
-Wire Wire Line
-	2750 2600 2750 2550
-Connection ~ 2550 2600
-Wire Wire Line
-	2750 2600 2750 2900
-Connection ~ 2750 2600
-Text GLabel 2150 2600 0    50   Output ~ 0
-VBUS
-Wire Wire Line
-	2150 2600 2250 2600
-Connection ~ 2250 2600
 $Comp
 L Device:C_Small C6
 U 1 1 60AE33AB
@@ -749,12 +675,12 @@ $EndComp
 Wire Wire Line
 	2400 6400 2550 6400
 Wire Wire Line
-	7650 4250 7050 4250
-Text Label 7050 4250 0    50   ~ 0
+	7500 3200 6900 3200
+Text Label 6900 3200 0    50   ~ 0
 RESET
 Wire Wire Line
 	1500 6400 1350 6400
-Text Label 1350 6400 2    50   ~ 0
+Text Label 1350 6400 0    50   ~ 0
 RESET
 $Comp
 L Device:C_Small C7
@@ -802,17 +728,6 @@ F 3 "" H 2750 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 800  2750 900 
-$Comp
-L Switch:SW_MEC_5G SW1
-U 1 1 60B5F5B4
-P 2750 1650
-F 0 "SW1" V 2796 1602 50  0000 R CNN
-F 1 "SW_MEC_5G" V 2705 1602 50  0000 R CNN
-F 2 "" H 2750 1850 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 2750 1850 50  0001 C CNN
-	1    2750 1650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2750 1300 2750 1450
 $Comp
@@ -832,4 +747,438 @@ Wire Notes Line
 	3550 500  3550 2200
 Text Notes 3300 2150 0    50   ~ 0
 RESET
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 608F4D39
+P 8100 2900
+F 0 "U1" H 8100 3000 50  0000 C CNN
+F 1 "ATmega328P-AU" H 8100 2850 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 8100 2900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 8100 2900 50  0001 C CNN
+	1    8100 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 608F8653
+P 6800 2200
+F 0 "D4" H 6800 2350 50  0000 C CNN
+F 1 "SCK" H 6800 2300 50  0000 C CNN
+F 2 "storage:LED_WL-SMCW" V 6800 2200 50  0001 C CNN
+F 3 "~" V 6800 2200 50  0001 C CNN
+	1    6800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 608FE9DB
+P 8100 4500
+F 0 "#PWR0122" H 8100 4250 50  0001 C CNN
+F 1 "GND" H 8200 4400 50  0000 C CNN
+F 2 "" H 8100 4500 50  0001 C CNN
+F 3 "" H 8100 4500 50  0001 C CNN
+	1    8100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4400 8100 4500
+$Comp
+L power:GND #PWR0123
+U 1 1 60901B9B
+P 6150 2200
+F 0 "#PWR0123" H 6150 1950 50  0001 C CNN
+F 1 "GND" H 6250 2100 50  0000 C CNN
+F 2 "" H 6150 2200 50  0001 C CNN
+F 3 "" H 6150 2200 50  0001 C CNN
+	1    6150 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R10
+U 1 1 6090299B
+P 6450 2200
+F 0 "R10" V 6500 2300 50  0000 L CNN
+F 1 "1K" V 6500 2000 50  0000 L CNN
+F 2 "storage:R_1K" H 6450 2200 50  0001 C CNN
+F 3 "~" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 2200 6700 2200
+Wire Wire Line
+	6150 2200 6350 2200
+Wire Wire Line
+	7500 2200 6900 2200
+Text Label 6900 2200 0    50   ~ 0
+SCK
+Wire Wire Line
+	7500 2100 6900 2100
+Text Label 6900 2100 0    50   ~ 0
+MISO
+Wire Wire Line
+	7500 2000 6900 2000
+Text Label 6900 2000 0    50   ~ 0
+MOSI
+Wire Wire Line
+	1500 6200 1350 6200
+Wire Wire Line
+	1500 6300 1350 6300
+Wire Wire Line
+	2400 6300 2550 6300
+Text Label 1350 6300 0    50   ~ 0
+SCK
+Text Label 1350 6200 0    50   ~ 0
+MISO
+Text Label 2550 6300 2    50   ~ 0
+MOSI
+Wire Wire Line
+	7500 2300 6900 2300
+Wire Wire Line
+	7500 2400 6900 2400
+Text Label 6900 2300 0    50   ~ 0
+XTAL1
+Text Label 6900 2400 0    50   ~ 0
+XTAL2
+$Comp
+L Device:Crystal Y1
+U 1 1 6093B60E
+P 4350 1150
+F 0 "Y1" H 4350 1418 50  0000 C CNN
+F 1 "Crystal" H 4350 1327 50  0000 C CNN
+F 2 "SamacSys_Parts:ECS49205PXTR" H 4350 1150 50  0001 C CNN
+F 3 "~" H 4350 1150 50  0001 C CNN
+	1    4350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 6093EF16
+P 4050 1350
+F 0 "C8" H 4050 1300 50  0000 R CNN
+F 1 "22pF" H 4000 1450 50  0000 R CNN
+F 2 "storage:C_0.1uF" H 4050 1350 50  0001 C CNN
+F 3 "~" H 4050 1350 50  0001 C CNN
+	1    4050 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 6094046A
+P 4650 1350
+F 0 "C9" H 4650 1300 50  0000 R CNN
+F 1 "22pF" H 4600 1450 50  0000 R CNN
+F 2 "storage:C_0.1uF" H 4650 1350 50  0001 C CNN
+F 3 "~" H 4650 1350 50  0001 C CNN
+	1    4650 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 1150 4650 1150
+Wire Wire Line
+	4650 1150 4650 1250
+Wire Wire Line
+	4200 1150 4050 1150
+Wire Wire Line
+	4050 1150 4050 1250
+$Comp
+L power:GND #PWR0124
+U 1 1 609471E6
+P 4050 1550
+F 0 "#PWR0124" H 4050 1300 50  0001 C CNN
+F 1 "GND" H 4150 1450 50  0000 C CNN
+F 2 "" H 4050 1550 50  0001 C CNN
+F 3 "" H 4050 1550 50  0001 C CNN
+	1    4050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1450 4050 1550
+$Comp
+L power:GND #PWR0125
+U 1 1 6094A969
+P 4650 1550
+F 0 "#PWR0125" H 4650 1300 50  0001 C CNN
+F 1 "GND" H 4750 1450 50  0000 C CNN
+F 2 "" H 4650 1550 50  0001 C CNN
+F 3 "" H 4650 1550 50  0001 C CNN
+	1    4650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1550 4650 1450
+Text Label 4500 1150 0    50   ~ 0
+XTAL1
+Text Label 4200 1150 2    50   ~ 0
+XTAL2
+Wire Notes Line
+	5050 2150 5050 500 
+Text Notes 4750 2150 0    50   ~ 0
+Crystal
+$Comp
+L Device:C_Small C13
+U 1 1 60970750
+P 8900 1700
+F 0 "C13" V 9000 1750 50  0000 R CNN
+F 1 "0.1u" V 8800 1750 50  0000 R CNN
+F 2 "storage:C_0.1uF" H 8900 1700 50  0001 C CNN
+F 3 "~" H 8900 1700 50  0001 C CNN
+	1    8900 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 1700 8800 1700
+$Comp
+L power:GND #PWR0126
+U 1 1 6097539C
+P 9100 1700
+F 0 "#PWR0126" H 9100 1450 50  0001 C CNN
+F 1 "GND" V 9100 1500 50  0000 C CNN
+F 2 "" H 9100 1700 50  0001 C CNN
+F 3 "" H 9100 1700 50  0001 C CNN
+	1    9100 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 1700 9100 1700
+$Comp
+L Device:C_Small C11
+U 1 1 6097E558
+P 8550 1100
+F 0 "C11" H 8650 1150 50  0000 R CNN
+F 1 "0.1u" H 8750 1000 50  0000 R CNN
+F 2 "storage:C_0.1uF" H 8550 1100 50  0001 C CNN
+F 3 "~" H 8550 1100 50  0001 C CNN
+	1    8550 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 6097ED14
+P 8900 1100
+F 0 "C12" H 9000 1150 50  0000 R CNN
+F 1 "0.1u" H 9100 1000 50  0000 R CNN
+F 2 "storage:C_0.1uF" H 8900 1100 50  0001 C CNN
+F 3 "~" H 8900 1100 50  0001 C CNN
+	1    8900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C10
+U 1 1 60980BB8
+P 8200 1100
+F 0 "C10" H 8250 1150 50  0000 L CNN
+F 1 "4.7uF" H 8200 1000 50  0000 L CNN
+F 2 "storage:C_4.7uF" H 8200 1100 50  0001 C CNN
+F 3 "~" H 8200 1100 50  0001 C CNN
+	1    8200 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1000 8200 950 
+Wire Wire Line
+	8200 950  8550 950 
+Wire Wire Line
+	8900 950  8900 1000
+Wire Wire Line
+	8550 1000 8550 950 
+Connection ~ 8550 950 
+Wire Wire Line
+	8550 950  8900 950 
+Wire Wire Line
+	8200 1200 8200 1250
+Wire Wire Line
+	8200 1250 8550 1250
+Wire Wire Line
+	8550 1250 8550 1200
+Wire Wire Line
+	8900 1200 8900 1250
+Wire Wire Line
+	8900 1250 8550 1250
+Connection ~ 8550 1250
+$Comp
+L power:GND #PWR0127
+U 1 1 609A13DE
+P 8900 1300
+F 0 "#PWR0127" H 8900 1050 50  0001 C CNN
+F 1 "GND" H 9000 1200 50  0000 C CNN
+F 2 "" H 8900 1300 50  0001 C CNN
+F 3 "" H 8900 1300 50  0001 C CNN
+	1    8900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1250 8900 1300
+Connection ~ 8900 1250
+Connection ~ 8200 950 
+Wire Wire Line
+	8000 950  8000 1400
+$Comp
+L power:+5V #PWR0128
+U 1 1 609BA7C1
+P 8000 900
+F 0 "#PWR0128" H 8000 750 50  0001 C CNN
+F 1 "+5V" H 8015 1073 50  0000 C CNN
+F 2 "" H 8000 900 50  0001 C CNN
+F 3 "" H 8000 900 50  0001 C CNN
+	1    8000 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 900  8000 950 
+Connection ~ 8000 950 
+Wire Wire Line
+	8700 1900 9300 1900
+Wire Wire Line
+	8700 2000 9300 2000
+Text Label 9300 1900 2    50   ~ 0
+ADC6
+Text Label 9300 2000 2    50   ~ 0
+ADC7
+Text Label 6900 3600 0    50   ~ 0
+INT0
+Wire Wire Line
+	7500 3600 6900 3600
+Wire Wire Line
+	7500 3700 6900 3700
+Text Label 6900 3700 0    50   ~ 0
+INT1
+Wire Wire Line
+	1500 6500 1350 6500
+Wire Wire Line
+	1500 6600 1350 6600
+Wire Wire Line
+	2400 6500 2550 6500
+Wire Wire Line
+	2400 6600 2550 6600
+Wire Wire Line
+	2400 6700 2550 6700
+Wire Wire Line
+	2400 6800 2550 6800
+Wire Wire Line
+	1500 6700 1350 6700
+Wire Wire Line
+	1500 6800 1350 6800
+Text Label 2550 6500 2    50   ~ 0
+INT1
+Text Label 1350 6500 0    50   ~ 0
+INT0
+Text Label 1350 6600 0    50   ~ 0
+ADC6
+Text Label 2550 6600 2    50   ~ 0
+ADC7
+Wire Wire Line
+	7500 3800 6900 3800
+Text Label 6900 3800 0    50   ~ 0
+PD4
+Text Label 1350 6700 0    50   ~ 0
+PD4
+Wire Wire Line
+	7500 4000 6900 4000
+Text Label 6900 4000 0    50   ~ 0
+PD6
+Text Label 2550 6700 2    50   ~ 0
+PD6
+Wire Wire Line
+	7500 3100 6900 3100
+Wire Wire Line
+	7500 3000 6900 3000
+Text Label 6900 3000 0    50   ~ 0
+PC4
+Text Label 6900 3100 0    50   ~ 0
+PC5
+Text Label 2550 6800 2    50   ~ 0
+PC5
+Text Label 1350 6800 0    50   ~ 0
+PC4
+NoConn ~ 7500 1700
+NoConn ~ 7500 1800
+NoConn ~ 7500 1900
+NoConn ~ 7500 2600
+NoConn ~ 7500 2700
+NoConn ~ 7500 2800
+NoConn ~ 7500 2900
+NoConn ~ 7500 3900
+NoConn ~ 7500 4100
+Wire Wire Line
+	8000 950  8100 950 
+Wire Wire Line
+	8100 1400 8100 950 
+Connection ~ 8100 950 
+Wire Wire Line
+	8100 950  8200 950 
+NoConn ~ 1200 1350
+Wire Wire Line
+	2950 2950 2950 2900
+Wire Wire Line
+	2950 2900 2750 2900
+Wire Wire Line
+	2750 2900 2750 2950
+$Comp
+L power:+5V #PWR0129
+U 1 1 60A9F1E4
+P 1700 900
+F 0 "#PWR0129" H 1700 750 50  0001 C CNN
+F 1 "+5V" H 1715 1073 50  0000 C CNN
+F 2 "" H 1700 900 50  0001 C CNN
+F 3 "" H 1700 900 50  0001 C CNN
+	1    1700 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 900  1700 950 
+Connection ~ 1700 950 
+Wire Wire Line
+	2750 2900 2750 2600
+Wire Wire Line
+	2750 2600 2550 2600
+Connection ~ 2750 2900
+Connection ~ 2550 2600
+Wire Wire Line
+	2750 2600 2750 2550
+Connection ~ 2750 2600
+$Comp
+L Device:LED_Small D1
+U 1 1 608FC2D3
+P 4100 3600
+F 0 "D1" H 4101 3713 50  0000 C CNN
+F 1 "RX" H 4102 3513 50  0000 C CNN
+F 2 "storage:LED_WL-SMCW" V 4100 3600 50  0001 C CNN
+F 3 "~" V 4100 3600 50  0001 C CNN
+	1    4100 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 608E208B
+P 4450 3600
+F 0 "D2" H 4451 3713 50  0000 C CNN
+F 1 "TX" H 4452 3513 50  0000 C CNN
+F 2 "storage:LED_WL-SMCW" V 4450 3600 50  0001 C CNN
+F 3 "~" V 4450 3600 50  0001 C CNN
+	1    4450 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 6099BBD8
+P 4800 3600
+F 0 "D3" H 4801 3713 50  0000 C CNN
+F 1 "3V3_on" H 4802 3513 50  0000 C CNN
+F 2 "storage:LED_WL-SMCW" V 4800 3600 50  0001 C CNN
+F 3 "~" V 4800 3600 50  0001 C CNN
+	1    4800 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW1
+U 1 1 60B1F19F
+P 2750 1650
+F 0 "SW1" V 2704 1898 50  0000 L CNN
+F 1 "SW_MEC_5E" V 2795 1898 50  0000 L CNN
+F 2 "storage:Button" H 2750 1950 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2750 1950 50  0001 C CNN
+	1    2750 1650
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
