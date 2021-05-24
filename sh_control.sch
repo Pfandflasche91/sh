@@ -13,2857 +13,429 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	3341 1192 3341 1242
-Wire Wire Line
-	3341 992  3341 892 
-Wire Notes Line
-	3741 2617 466  2617
-Text Notes 2416 2667 0    50   ~ 0
-Microusb B Connector - upstream\n\n
-$Comp
-L power:VBUS #PWR0101
-U 1 1 60E5718F
-P 3866 767
-F 0 "#PWR0101" H 3866 617 50  0001 C CNN
-F 1 "VBUS" H 3881 940 50  0000 C CNN
-F 2 "" H 3866 767 50  0001 C CNN
-F 3 "" H 3866 767 50  0001 C CNN
-	1    3866 767 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3866 842  4041 842 
-Wire Wire Line
-	4041 942  3866 942 
-Wire Wire Line
-	3866 767  3866 842 
-Connection ~ 3866 842 
-Wire Wire Line
-	4041 1042 3866 1042
-Wire Wire Line
-	3866 842  3866 942 
-Connection ~ 3866 942 
-Wire Wire Line
-	3866 942  3866 1042
-Text GLabel 4916 842  2    50   Input ~ 0
-Buck_1
-Text GLabel 4916 942  2    50   Input ~ 0
-Buck_2
-Text GLabel 4916 1042 2    50   Input ~ 0
-LDO
-$Comp
-L SamacSys_Parts:10129381-906001BLF J3
-U 1 1 60E571B2
-P 5920 820
-F 0 "J3" H 6320 1085 50  0000 C CNN
-F 1 "10129381-906001BLF" H 6320 994 50  0000 C CNN
-F 2 "SamacSys_Parts:HDRV6W67P254_2X3_762X483X858P" H 6570 920 50  0001 L CNN
-F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10129381.pdf" H 6570 820 50  0001 L CNN
-F 4 "HEADER DR VT TH 2X3" H 6570 720 50  0001 L CNN "Description"
-F 5 "8.58" H 6570 620 50  0001 L CNN "Height"
-F 6 "649-1012938190601BLF" H 6570 520 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/10129381-906001BLF?qs=0lQeLiL1qyZMxGRnx95Mzg%3D%3D" H 6570 420 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Amphenol" H 6570 320 50  0001 L CNN "Manufacturer_Name"
-F 9 "10129381-906001BLF" H 6570 220 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5920 820 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0102
-U 1 1 60E571B8
-P 6880 790
-F 0 "#PWR0102" H 6880 640 50  0001 C CNN
-F 1 "+3V3" H 6895 963 50  0000 C CNN
-F 2 "" H 6880 790 50  0001 C CNN
-F 3 "" H 6880 790 50  0001 C CNN
-	1    6880 790 
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	7041 1267 3766 1267
-Text Notes 6441 1242 0    50   ~ 0
-Power Switches
-Text GLabel 791  2967 0    50   Output ~ 0
-Buck_1
-Wire Wire Line
-	1866 3817 1866 3767
-$Comp
-L power:GND #PWR0103
-U 1 1 60E571CA
-P 1866 3817
-F 0 "#PWR0103" H 1866 3567 50  0001 C CNN
-F 1 "GND" H 1866 3692 50  0000 C CNN
-F 2 "" H 1866 3817 50  0001 C CNN
-F 3 "" H 1866 3817 50  0001 C CNN
-	1    1866 3817
-	1    0    0    -1  
-$EndComp
-Connection ~ 2666 3267
-Wire Wire Line
-	2666 3317 2666 3267
-$Comp
-L power:GND #PWR0104
-U 1 1 60E571D2
-P 2666 3317
-F 0 "#PWR0104" H 2666 3067 50  0001 C CNN
-F 1 "GND" H 2666 3192 50  0000 C CNN
-F 2 "" H 2666 3317 50  0001 C CNN
-F 3 "" H 2666 3317 50  0001 C CNN
-	1    2666 3317
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2666 3267 2466 3267
-Wire Wire Line
-	2666 3242 2666 3267
-Wire Wire Line
-	2666 2967 2666 3042
-Connection ~ 2541 2967
-Wire Wire Line
-	2666 2967 2541 2967
-Wire Wire Line
-	2541 3067 2466 3067
-Wire Wire Line
-	2541 2967 2541 3067
-Wire Wire Line
-	2466 2967 2541 2967
-Wire Wire Line
-	941  3042 941  2967
-Wire Wire Line
-	1216 3267 1266 3267
-$Comp
-L Connector:TestPoint Enable1
-U 1 1 60E571E2
-P 1216 3267
-F 0 "Enable1" V 1241 3292 50  0000 C CNN
-F 1 "TestPoint" V 1141 3242 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1416 3267 50  0001 C CNN
-F 3 "~" H 1416 3267 50  0001 C CNN
-	1    1216 3267
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	941  3242 941  3292
-$Comp
-L power:GND #PWR0105
-U 1 1 60E571E9
-P 941 3292
-F 0 "#PWR0105" H 941 3042 50  0001 C CNN
-F 1 "GND" H 941 3167 50  0000 C CNN
-F 2 "" H 941 3292 50  0001 C CNN
-F 3 "" H 941 3292 50  0001 C CNN
-	1    941  3292
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1166 3167 1266 3167
-Wire Wire Line
-	1266 2967 941  2967
-$Comp
-L power:GND #PWR0106
-U 1 1 60E571F1
-P 1166 3167
-F 0 "#PWR0106" H 1166 2917 50  0001 C CNN
-F 1 "GND" V 1066 3117 50  0000 C CNN
-F 2 "" H 1166 3167 50  0001 C CNN
-F 3 "" H 1166 3167 50  0001 C CNN
-	1    1166 3167
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C10
-U 1 1 60E571F7
-P 2666 3142
-F 0 "C10" H 2716 3192 50  0000 L CNN
-F 1 "2.2uF" H 2716 3092 50  0000 L CNN
-F 2 "storage:C_2.2F" H 2666 3142 50  0001 C CNN
-F 3 "~" H 2666 3142 50  0001 C CNN
-	1    2666 3142
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C2
-U 1 1 60E571FD
-P 941 3142
-F 0 "C2" H 816 3217 50  0000 L CNN
-F 1 "1uF" H 791 3067 50  0000 L CNN
-F 2 "storage:C_1uF" H 941 3142 50  0001 C CNN
-F 3 "~" H 941 3142 50  0001 C CNN
-	1    941  3142
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2466 3167
-NoConn ~ 1266 3067
-$Comp
-L SamacSys_Parts:TLV76733DGNR IC4
-U 1 1 60E5720B
-P 2466 2967
-F 0 "IC4" H 3066 3232 50  0000 C CNN
-F 1 "TLV76733DGNR" H 3066 3141 50  0000 C CNN
-F 2 "SamacSys_Parts:SOP65P490X110-9N" H 3516 3067 50  0001 L CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tlv767.pdf?ts=1601893180135&ref_url=https%253A%252F%252Fduckduckgo.com%252F" H 3516 2967 50  0001 L CNN
-F 4 "LDO Voltage Regulators 1-A, 16-V, high-PSRR, high-accuracy, low-dropout voltage regulator with enable" H 3516 2867 50  0001 L CNN "Description"
-F 5 "1.1" H 3516 2767 50  0001 L CNN "Height"
-F 6 "595-TLV76733DGNR" H 3516 2667 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV76733DGNR?qs=W%2FMpXkg%252BdQ7WCurh%2FfEdlw%3D%3D" H 3516 2567 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 3516 2467 50  0001 L CNN "Manufacturer_Name"
-F 9 "TLV76733DGNR" H 3516 2367 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2466 2967
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	791  2967 941  2967
-Connection ~ 941  2967
-Text GLabel 2766 2967 2    50   Input ~ 0
-3V3_Buck_1
-Wire Wire Line
-	2766 2967 2666 2967
-Connection ~ 2666 2967
-Wire Wire Line
-	4916 842  4841 842 
-Wire Wire Line
-	4916 942  4841 942 
-Wire Wire Line
-	4916 1042 4841 1042
-Text GLabel 5860 820  0    50   Output ~ 0
-3V3_Buck_1
-$Comp
-L Device:C_Small C4
 U 1 1 60E5721B
-P 1691 5142
-F 0 "C4" H 1691 5217 50  0000 L CNN
-F 1 "10uF" H 1691 5067 50  0000 L CNN
-F 2 "storage:C_10uF" H 1691 5142 50  0001 C CNN
-F 3 "~" H 1691 5142 50  0001 C CNN
-	1    1691 5142
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 60E57221
-P 1966 4717
-F 0 "R7" V 2041 4742 50  0000 L CNN
-F 1 "240" V 2041 4567 50  0000 L CNN
-F 2 "storage:R_240" H 1966 4717 50  0001 C CNN
-F 3 "~" H 1966 4717 50  0001 C CNN
-	1    1966 4717
-	0    -1   -1   0   
-$EndComp
-Text GLabel 1591 4917 0    50   Output ~ 0
-Buck_2
-$Comp
-L Device:C_Small C6
-U 1 1 60E57228
-P 2016 5142
-F 0 "C6" H 2016 5217 50  0000 L CNN
-F 1 "0.1uF" H 2016 5017 50  0000 L CNN
-F 2 "storage:C_0.1uF" H 2016 5142 50  0001 C CNN
-F 3 "~" H 2016 5142 50  0001 C CNN
-	1    2016 5142
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1591 4917 1691 4917
-Wire Wire Line
-	2016 5042 2016 4917
-Connection ~ 2016 4917
-Wire Wire Line
-	1691 5042 1691 4917
-Connection ~ 1691 4917
-Wire Wire Line
-	1691 4917 2016 4917
-$Comp
-L power:GND #PWR0107
-U 1 1 60E57234
-P 1691 5317
-F 0 "#PWR0107" H 1691 5067 50  0001 C CNN
-F 1 "GND" H 1691 5192 50  0000 C CNN
-F 2 "" H 1691 5317 50  0001 C CNN
-F 3 "" H 1691 5317 50  0001 C CNN
-	1    1691 5317
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1691 5242 1691 5292
-Wire Wire Line
-	2016 5242 2016 5292
-Wire Wire Line
-	2016 5292 1691 5292
-Connection ~ 1691 5292
-Wire Wire Line
-	1691 5292 1691 5317
-$Comp
-L Device:D_Small D2
-U 1 1 60E5723F
-P 2916 5192
-F 0 "D2" H 2916 5292 50  0000 C CNN
-F 1 "1N4002" H 2941 5092 50  0000 C CNN
-F 2 "storage:D_1N4002" V 2916 5192 50  0001 C CNN
-F 3 "~" V 2916 5192 50  0001 C CNN
-	1    2916 5192
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3691 4717 3741 4717
-Wire Wire Line
-	3741 4717 3741 5192
-Wire Wire Line
-	3741 5192 3016 5192
-Wire Wire Line
-	2816 5192 2141 5192
-Wire Wire Line
-	2141 5192 2141 4917
-Wire Wire Line
-	2016 4917 2141 4917
-Connection ~ 2141 4917
-$Comp
-L Device:C_Small C13
-U 1 1 60E5724C
-P 3866 4942
-F 0 "C13" H 3866 5017 50  0000 L CNN
-F 1 "0.1uF" H 3866 4817 50  0000 L CNN
-F 2 "storage:C_0.1uF" H 3866 4942 50  0001 C CNN
-F 3 "~" H 3866 4942 50  0001 C CNN
-	1    3866 4942
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3866 4842 3866 4717
-Wire Wire Line
-	3866 4717 3741 4717
-Connection ~ 3741 4717
-$Comp
-L power:GND #PWR0108
-U 1 1 60E57255
-P 3866 5117
-F 0 "#PWR0108" H 3866 4867 50  0001 C CNN
-F 1 "GND" H 3866 4992 50  0000 C CNN
-F 2 "" H 3866 5117 50  0001 C CNN
-F 3 "" H 3866 5117 50  0001 C CNN
-	1    3866 5117
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3866 5042 3866 5117
-$Comp
-L Device:C_Small C3
-U 1 1 60E5725C
-P 1091 4967
-F 0 "C3" H 1091 5042 50  0000 L CNN
-F 1 "1uF" H 1091 4842 50  0000 L CNN
-F 2 "storage:C_1uF" H 1091 4967 50  0001 C CNN
-F 3 "~" H 1091 4967 50  0001 C CNN
-	1    1091 4967
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:LM317MDCY IC2
-U 1 1 60E57268
-P 2191 4717
-F 0 "IC2" H 3441 4867 50  0000 C CNN
-F 1 "LM317MDCY" H 3266 4367 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT230P700X180-4N" H 3541 4817 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm317m.pdf" H 3541 4717 50  0001 L CNN
-F 4 "LM317MDCY, Linear Voltage Regulator, 0.5A Adjustable 1.25  37 V, 4-Pin SOT-223" H 3541 4617 50  0001 L CNN "Description"
-F 5 "1.8" H 3541 4517 50  0001 L CNN "Height"
-F 6 "595-LM317MDCY" H 3541 4417 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM317MDCY?qs=%252BWCn1GN4mVygYq1xRdAz5g%3D%3D" H 3541 4317 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 3541 4217 50  0001 L CNN "Manufacturer_Name"
-F 9 "LM317MDCY" H 3541 4117 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2191 4717
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1091 4817 1091 4867
-$Comp
-L power:GND #PWR0109
-U 1 1 60E5726F
-P 1091 5117
-F 0 "#PWR0109" H 1091 4867 50  0001 C CNN
-F 1 "GND" H 1091 4992 50  0000 C CNN
-F 2 "" H 1091 5117 50  0001 C CNN
-F 3 "" H 1091 5117 50  0001 C CNN
-	1    1091 5117
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1091 5067 1091 5117
-Text GLabel 5860 920  0    50   Output ~ 0
-3V3_Buck_2
-Text GLabel 1016 4817 0    50   Input ~ 0
-3V3_Buck_2
-Wire Wire Line
-	1016 4817 1091 4817
-Connection ~ 1091 4817
-$Comp
-L Device:R_Small R5
-U 1 1 60E5727B
-P 1766 4567
-F 0 "R5" V 1841 4592 50  0000 L CNN
-F 1 "22" V 1841 4467 50  0000 L CNN
-F 2 "storage:R_22" H 1766 4567 50  0001 C CNN
-F 3 "~" H 1766 4567 50  0001 C CNN
-	1    1766 4567
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1866 4717 1816 4717
-Wire Wire Line
-	1816 4717 1816 4817
-Connection ~ 1816 4817
-Wire Wire Line
-	1816 4817 1516 4817
-$Comp
-L Device:D_Small D1
-U 1 1 60E57285
-P 2891 4442
-F 0 "D1" H 2891 4542 50  0000 C CNN
-F 1 "1N4002" H 2916 4342 50  0000 C CNN
-F 2 "storage:D_1N4002" V 2891 4442 50  0001 C CNN
-F 3 "~" V 2891 4442 50  0001 C CNN
-	1    2891 4442
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 60E5728B
-P 1641 4567
-F 0 "#PWR0110" H 1641 4317 50  0001 C CNN
-F 1 "GND" V 1741 4517 50  0000 C CNN
-F 2 "" H 1641 4567 50  0001 C CNN
-F 3 "" H 1641 4567 50  0001 C CNN
-	1    1641 4567
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2991 4442 3741 4442
-Wire Wire Line
-	3741 4442 3741 4717
-Wire Wire Line
-	2791 4442 1516 4442
-Wire Wire Line
-	1516 4442 1516 4817
-Connection ~ 1516 4817
-Wire Wire Line
-	1516 4817 1091 4817
-Text Notes 3816 5542 0    50   ~ 0
-Buck_2\n
-Wire Wire Line
-	2066 4717 2166 4717
-$Comp
-L Device:R_Small R8
-U 1 1 60E57299
-P 2041 4567
-F 0 "R8" V 2116 4592 50  0000 L CNN
-F 1 "390" V 2116 4417 50  0000 L CNN
-F 2 "storage:R_390" H 2041 4567 50  0001 C CNN
-F 3 "~" H 2041 4567 50  0001 C CNN
-	1    2041 4567
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2141 4567 2166 4567
-Wire Wire Line
-	2166 4567 2166 4717
-Connection ~ 2166 4717
-Wire Wire Line
-	2166 4717 2191 4717
-Wire Wire Line
-	1941 4567 1866 4567
-Wire Wire Line
-	1666 4567 1641 4567
-$Comp
-L SamacSys_Parts:TPS73533DRBT IC3
-U 1 1 60E572AB
-P 2416 6967
-F 0 "IC3" H 2641 6217 50  0000 C CNN
-F 1 "TPS73533DRBT" H 3016 7042 50  0000 C CNN
-F 2 "SamacSys_Parts:TPS73533DRBT" H 3466 7367 50  0001 L CNN
-F 3 "https://www.ti.com/lit/gpn/TPS735" H 3466 7267 50  0001 L CNN
-F 4 "LDO Voltage Regulators Sgl Out,500mA,Fixed Lo Quie Crnt,Hi PSRR" H 3466 7167 50  0001 L CNN "Description"
-F 5 "1" H 3466 7067 50  0001 L CNN "Height"
-F 6 "595-TPS73533DRBT" H 3466 6967 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS73533DRBT/?qs=IDSsxkoac0yHZOHlDK7%252B5A%3D%3D" H 3466 6867 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 3466 6767 50  0001 L CNN "Manufacturer_Name"
-F 9 "TPS73533DRBT" H 3466 6667 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2416 6967
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 60E572B1
-P 791 6817
-F 0 "C1" H 791 6892 50  0000 L CNN
-F 1 "1uF" H 616 6742 50  0000 L CNN
-F 2 "storage:C_1uF" H 791 6817 50  0001 C CNN
-F 3 "~" H 791 6817 50  0001 C CNN
-	1    791  6817
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 60E572B7
-P 2591 6767
-F 0 "C9" V 2616 6792 50  0000 L CNN
-F 1 "1uF" V 2491 6717 50  0000 L CNN
-F 2 "storage:C_1uF" H 2591 6767 50  0001 C CNN
-F 3 "~" H 2591 6767 50  0001 C CNN
-	1    2591 6767
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C8
-U 1 1 60E572BD
-P 2516 7092
-F 0 "C8" H 2516 7167 50  0000 L CNN
-F 1 "1uF" H 2541 7017 50  0000 L CNN
-F 2 "storage:C_1uF" H 2516 7092 50  0001 C CNN
-F 3 "~" H 2516 7092 50  0001 C CNN
-	1    2516 7092
+P 1691 1342
+F 0 "C2" H 1691 1417 50  0000 L CNN
+F 1 "10uF" H 1691 1267 50  0000 L CNN
+F 2 "storage:C_10uF" H 1691 1342 50  0001 C CNN
+F 3 "~" H 1691 1342 50  0001 C CNN
+	1    1691 1342
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R2
-U 1 1 60E572C3
-P 1066 6667
-F 0 "R2" V 1141 6692 50  0000 L CNN
-F 1 "390" V 1141 6517 50  0000 L CNN
-F 2 "storage:R_390" H 1066 6667 50  0001 C CNN
-F 3 "~" H 1066 6667 50  0001 C CNN
-	1    1066 6667
+U 1 1 60E57221
+P 1966 917
+F 0 "R2" V 2041 942 50  0000 L CNN
+F 1 "240" V 2041 767 50  0000 L CNN
+F 2 "storage:R_240" H 1966 917 50  0001 C CNN
+F 3 "~" H 1966 917 50  0001 C CNN
+	1    1966 917 
 	0    -1   -1   0   
 $EndComp
-Text GLabel 691  6667 0    50   Output ~ 0
-LDO
-Wire Wire Line
-	1166 6667 1216 6667
-Wire Wire Line
-	966  6667 941  6667
-Wire Wire Line
-	1216 6967 941  6967
-Wire Wire Line
-	941  6967 941  6667
-Connection ~ 941  6667
-Wire Wire Line
-	691  6667 791  6667
-Wire Wire Line
-	791  6667 791  6717
-Wire Wire Line
-	791  6667 941  6667
-Connection ~ 791  6667
 $Comp
-L power:GND #PWR0111
-U 1 1 60E572D3
-P 791 6967
-F 0 "#PWR0111" H 791 6717 50  0001 C CNN
-F 1 "GND" H 791 6842 50  0000 C CNN
-F 2 "" H 791 6967 50  0001 C CNN
-F 3 "" H 791 6967 50  0001 C CNN
-	1    791  6967
+L Device:C_Small C3
+U 1 1 60E57228
+P 2016 1342
+F 0 "C3" H 2016 1417 50  0000 L CNN
+F 1 "0.1uF" H 2016 1217 50  0000 L CNN
+F 2 "storage:C_0.1uF" H 2016 1342 50  0001 C CNN
+F 3 "~" H 2016 1342 50  0001 C CNN
+	1    2016 1342
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	791  6917 791  6967
+	1591 1117 1691 1117
+Wire Wire Line
+	2016 1242 2016 1117
+Connection ~ 2016 1117
+Wire Wire Line
+	1691 1242 1691 1117
+Connection ~ 1691 1117
+Wire Wire Line
+	1691 1117 2016 1117
 $Comp
-L power:GND #PWR0112
-U 1 1 60E572DA
-P 1716 7617
-F 0 "#PWR0112" H 1716 7367 50  0001 C CNN
-F 1 "GND" H 1716 7492 50  0000 C CNN
-F 2 "" H 1716 7617 50  0001 C CNN
-F 3 "" H 1716 7617 50  0001 C CNN
-	1    1716 7617
+L power:GND #PWR03
+U 1 1 60E57234
+P 1691 1517
+F 0 "#PWR03" H 1691 1267 50  0001 C CNN
+F 1 "GND" H 1691 1392 50  0000 C CNN
+F 2 "" H 1691 1517 50  0001 C CNN
+F 3 "" H 1691 1517 50  0001 C CNN
+	1    1691 1517
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1716 7567 1716 7592
+	1691 1442 1691 1492
 Wire Wire Line
-	1716 7592 1816 7592
+	2016 1442 2016 1492
 Wire Wire Line
-	1816 7592 1816 7567
+	2016 1492 1691 1492
+Connection ~ 1691 1492
 Wire Wire Line
-	1816 7592 1916 7592
-Wire Wire Line
-	1916 7592 1916 7567
-Connection ~ 1816 7592
-Wire Wire Line
-	1716 7592 1716 7617
-Connection ~ 1716 7592
+	1691 1492 1691 1517
 $Comp
-L power:GND #PWR0113
-U 1 1 60E572E8
-P 1916 6017
-F 0 "#PWR0113" H 1916 5767 50  0001 C CNN
-F 1 "GND" H 1916 5892 50  0000 C CNN
-F 2 "" H 1916 6017 50  0001 C CNN
-F 3 "" H 1916 6017 50  0001 C CNN
-	1    1916 6017
+L Device:D_Small D2
+U 1 1 60E5723F
+P 2916 1392
+F 0 "D2" H 2916 1492 50  0000 C CNN
+F 1 "1N4002" H 2941 1292 50  0000 C CNN
+F 2 "storage:D_1N4002" V 2916 1392 50  0001 C CNN
+F 3 "~" V 2916 1392 50  0001 C CNN
+	1    2916 1392
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3691 917  3741 917 
+Wire Wire Line
+	3741 917  3741 1392
+Wire Wire Line
+	3741 1392 3016 1392
+Wire Wire Line
+	2816 1392 2141 1392
+Wire Wire Line
+	2141 1392 2141 1117
+Wire Wire Line
+	2016 1117 2141 1117
+Connection ~ 2141 1117
+$Comp
+L Device:C_Small C4
+U 1 1 60E5724C
+P 3866 1142
+F 0 "C4" H 3866 1217 50  0000 L CNN
+F 1 "0.1uF" H 3866 1017 50  0000 L CNN
+F 2 "storage:C_0.1uF" H 3866 1142 50  0001 C CNN
+F 3 "~" H 3866 1142 50  0001 C CNN
+	1    3866 1142
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3866 1042 3866 917 
+Wire Wire Line
+	3866 917  3741 917 
+Connection ~ 3741 917 
+$Comp
+L power:GND #PWR04
+U 1 1 60E57255
+P 3866 1317
+F 0 "#PWR04" H 3866 1067 50  0001 C CNN
+F 1 "GND" H 3866 1192 50  0000 C CNN
+F 2 "" H 3866 1317 50  0001 C CNN
+F 3 "" H 3866 1317 50  0001 C CNN
+	1    3866 1317
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3866 1242 3866 1317
+$Comp
+L Device:C_Small C1
+U 1 1 60E5725C
+P 1091 1167
+F 0 "C1" H 1091 1242 50  0000 L CNN
+F 1 "1uF" H 1091 1042 50  0000 L CNN
+F 2 "storage:C_1uF" H 1091 1167 50  0001 C CNN
+F 3 "~" H 1091 1167 50  0001 C CNN
+	1    1091 1167
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:LM317MDCY IC1
+U 1 1 60E57268
+P 2191 917
+F 0 "IC1" H 3441 1067 50  0000 C CNN
+F 1 "LM317MDCY" H 3266 567 50  0000 C CNN
+F 2 "SamacSys_Parts:SOT230P700X180-4N" H 3541 1017 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317m.pdf" H 3541 917 50  0001 L CNN
+F 4 "LM317MDCY, Linear Voltage Regulator, 0.5A Adjustable 1.25  37 V, 4-Pin SOT-223" H 3541 817 50  0001 L CNN "Description"
+F 5 "1.8" H 3541 717 50  0001 L CNN "Height"
+F 6 "595-LM317MDCY" H 3541 617 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM317MDCY?qs=%252BWCn1GN4mVygYq1xRdAz5g%3D%3D" H 3541 517 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3541 417 50  0001 L CNN "Manufacturer_Name"
+F 9 "LM317MDCY" H 3541 317 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2191 917 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1091 1017 1091 1067
+$Comp
+L power:GND #PWR01
+U 1 1 60E5726F
+P 1091 1317
+F 0 "#PWR01" H 1091 1067 50  0001 C CNN
+F 1 "GND" H 1091 1192 50  0000 C CNN
+F 2 "" H 1091 1317 50  0001 C CNN
+F 3 "" H 1091 1317 50  0001 C CNN
+	1    1091 1317
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1091 1267 1091 1317
+Wire Wire Line
+	1016 1017 1091 1017
+Connection ~ 1091 1017
+$Comp
+L Device:R_Small R1
+U 1 1 60E5727B
+P 1766 767
+F 0 "R1" V 1841 792 50  0000 L CNN
+F 1 "22" V 1841 667 50  0000 L CNN
+F 2 "storage:R_22" H 1766 767 50  0001 C CNN
+F 3 "~" H 1766 767 50  0001 C CNN
+	1    1766 767 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1866 917  1816 917 
+Wire Wire Line
+	1816 917  1816 1017
+Connection ~ 1816 1017
+Wire Wire Line
+	1816 1017 1516 1017
+$Comp
+L Device:D_Small D1
+U 1 1 60E57285
+P 2891 642
+F 0 "D1" H 2891 742 50  0000 C CNN
+F 1 "1N4002" H 2916 542 50  0000 C CNN
+F 2 "storage:D_1N4002" V 2891 642 50  0001 C CNN
+F 3 "~" V 2891 642 50  0001 C CNN
+	1    2891 642 
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1916 6017 1916 6042
-Wire Wire Line
-	1816 6067 1816 6042
-Wire Wire Line
-	1816 6042 1916 6042
-Connection ~ 1916 6042
-Wire Wire Line
-	1916 6042 1916 6067
 $Comp
-L power:GND #PWR0114
-U 1 1 60E572F3
-P 2516 7242
-F 0 "#PWR0114" H 2516 6992 50  0001 C CNN
-F 1 "GND" H 2516 7117 50  0000 C CNN
-F 2 "" H 2516 7242 50  0001 C CNN
-F 3 "" H 2516 7242 50  0001 C CNN
-	1    2516 7242
-	1    0    0    -1  
+L power:GND #PWR02
+U 1 1 60E5728B
+P 1641 767
+F 0 "#PWR02" H 1641 517 50  0001 C CNN
+F 1 "GND" V 1741 717 50  0000 C CNN
+F 2 "" H 1641 767 50  0001 C CNN
+F 3 "" H 1641 767 50  0001 C CNN
+	1    1641 767 
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2516 7192 2516 7242
+	2991 642  3741 642 
 Wire Wire Line
-	2516 6992 2516 6967
+	3741 642  3741 917 
 Wire Wire Line
-	2516 6967 2416 6967
-Text GLabel 5860 1020 0    50   Output ~ 0
-3V3_LDO
-Text GLabel 2641 6967 2    50   Input ~ 0
-3V3_LDO
+	2791 642  1516 642 
 Wire Wire Line
-	2516 6967 2641 6967
-Connection ~ 2516 6967
+	1516 642  1516 1017
+Connection ~ 1516 1017
 Wire Wire Line
-	2416 6767 2491 6767
+	1516 1017 1091 1017
+Wire Wire Line
+	2066 917  2166 917 
 $Comp
-L power:GND #PWR0115
-U 1 1 60E57302
-P 2766 6767
-F 0 "#PWR0115" H 2766 6517 50  0001 C CNN
-F 1 "GND" V 2666 6742 50  0000 C CNN
-F 2 "" H 2766 6767 50  0001 C CNN
-F 3 "" H 2766 6767 50  0001 C CNN
-	1    2766 6767
+L Device:R_Small R3
+U 1 1 60E57299
+P 2041 767
+F 0 "R3" V 2116 792 50  0000 L CNN
+F 1 "390" V 2116 617 50  0000 L CNN
+F 2 "storage:R_390" H 2041 767 50  0001 C CNN
+F 3 "~" H 2041 767 50  0001 C CNN
+	1    2041 767 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2416 6667 2741 6667
+	2141 767  2166 767 
 Wire Wire Line
-	2741 6667 2741 6767
+	2166 767  2166 917 
+Connection ~ 2166 917 
 Wire Wire Line
-	2741 6767 2691 6767
+	2166 917  2191 917 
 Wire Wire Line
-	2741 6767 2766 6767
-Connection ~ 2741 6767
-NoConn ~ 2416 6867
-NoConn ~ 1216 6767
-NoConn ~ 1216 6867
-Wire Notes Line
-	3741 492  3741 4042
-Wire Notes Line
-	4116 4042 4116 5567
-Wire Notes Line
-	4116 5567 466  5567
-Wire Notes Line
-	466  4042 4116 4042
-Wire Notes Line
-	3091 5567 3091 7817
-Text Notes 3466 4017 0    50   ~ 0
-Buck_1\n
+	1941 767  1866 767 
+Wire Wire Line
+	1666 767  1641 767 
 Text Notes 2916 7792 0    50   ~ 0
 LDO
-$Comp
-L Connector:USB_A PortA1
-U 1 1 60E57317
-P 10736 788
-F 0 "PortA1" H 10506 777 50  0000 R CNN
-F 1 "USB_A" H 10506 686 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 10886 738 50  0001 C CNN
-F 3 " ~" H 10886 738 50  0001 C CNN
-	1    10736 788 
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_A PortB1
-U 1 1 60E5731D
-P 10748 1740
-F 0 "PortB1" H 10518 1729 50  0000 R CNN
-F 1 "USB_A" H 10518 1638 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 10898 1690 50  0001 C CNN
-F 3 " ~" H 10898 1690 50  0001 C CNN
-	1    10748 1740
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C16
-U 1 1 60E5733E
-P 4363 3207
-F 0 "C16" H 4413 3257 50  0000 L CNN
-F 1 "22pF" H 4413 3157 50  0000 L CNN
-F 2 "storage:C_22pF" H 4363 3207 50  0001 C CNN
-F 3 "~" H 4363 3207 50  0001 C CNN
-	1    4363 3207
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 60E57350
-P 4163 2293
-F 0 "#PWR0118" H 4163 2043 50  0001 C CNN
-F 1 "GND" H 4163 2168 50  0000 C CNN
-F 2 "" H 4163 2293 50  0001 C CNN
-F 3 "" H 4163 2293 50  0001 C CNN
-	1    4163 2293
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0119
-U 1 1 60E57365
-P 4730 1482
-F 0 "#PWR0119" H 4730 1332 50  0001 C CNN
-F 1 "+3V3" H 4745 1655 50  0000 C CNN
-F 2 "" H 4730 1482 50  0001 C CNN
-F 3 "" H 4730 1482 50  0001 C CNN
-	1    4730 1482
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 60E5736B
-P 4730 1807
-F 0 "#PWR0120" H 4730 1557 50  0001 C CNN
-F 1 "GND" H 4730 1682 50  0000 C CNN
-F 2 "" H 4730 1807 50  0001 C CNN
-F 3 "" H 4730 1807 50  0001 C CNN
-	1    4730 1807
-	1    0    0    -1  
-$EndComp
-Text GLabel 5230 1532 2    50   Input ~ 0
-VCC
-Wire Wire Line
-	5055 1782 5055 1757
-Wire Wire Line
-	4730 1782 5055 1782
-Wire Wire Line
-	5055 1532 5055 1557
-Wire Wire Line
-	4730 1532 5055 1532
-$Comp
-L Device:C_Small C18
-U 1 1 60E57376
-P 5055 1657
-F 0 "C18" H 5105 1707 50  0000 L CNN
-F 1 "4.7uF" H 5105 1607 50  0000 L CNN
-F 2 "storage:C_4.7uF" H 5055 1657 50  0001 C CNN
-F 3 "~" H 5055 1657 50  0001 C CNN
-	1    5055 1657
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5230 1532 5055 1532
-Connection ~ 5055 1532
-Text GLabel 6153 1787 1    50   Output ~ 0
-VCC
-Text GLabel 4903 3157 0    50   Output ~ 0
-VCC
-Text GLabel 3973 2957 0    50   Output ~ 0
-D0+
-Text GLabel 3973 3057 0    50   Output ~ 0
-D0-
-$Comp
-L Device:C_Small C15
-U 1 1 60E57384
-P 4043 3207
-F 0 "C15" H 4093 3257 50  0000 L CNN
-F 1 "22pF" H 4093 3157 50  0000 L CNN
-F 2 "storage:C_22pF" H 4043 3207 50  0001 C CNN
-F 3 "~" H 4043 3207 50  0001 C CNN
-	1    4043 3207
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 60E5739E
-P 4883 3717
-F 0 "#PWR0122" H 4883 3467 50  0001 C CNN
-F 1 "GND" H 4883 3592 50  0000 C CNN
-F 2 "" H 4883 3717 50  0001 C CNN
-F 3 "" H 4883 3717 50  0001 C CNN
-	1    4883 3717
-	1    0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:LFXTAL036567BULK Y1
-U 1 1 60E573B3
-P 7691 942
-F 0 "Y1" H 7983 577 50  0000 C CNN
-F 1 "6MHz" H 7983 668 50  0000 C CNN
-F 2 "SamacSys_Parts:LFXTAL036567BULK" H 8341 1042 50  0001 L CNN
-F 3 "" H 8341 942 50  0001 L CNN
-F 4 "Crystals 6MHz 27pF -40C 85C" H 8341 842 50  0001 L CNN "Description"
-F 5 "4.1" H 8341 742 50  0001 L CNN "Height"
-F 6 "449-LFXTAL036567BULK" H 8341 642 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/IQD/LFXTAL036567Bulk?qs=e4%2FAndAAwgLCQesvfzEaKQ%3D%3D" H 8341 542 50  0001 L CNN "Mouser Price/Stock"
-F 8 "IQD" H 8341 442 50  0001 L CNN "Manufacturer_Name"
-F 9 "LFXTAL036567BULK" H 8341 342 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7691 942 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C_Small C19
-U 1 1 60E573B9
-P 7741 1092
-F 0 "C19" H 7791 1142 50  0000 L CNN
-F 1 "27uF" H 7791 1042 50  0000 L CNN
-F 2 "storage:C_27pF" H 7741 1092 50  0001 C CNN
-F 3 "~" H 7741 1092 50  0001 C CNN
-	1    7741 1092
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R18
-U 1 1 60E573BF
-P 8366 842
-F 0 "R18" V 8291 742 50  0000 L CNN
-F 1 "1.5k" V 8291 867 50  0000 L CNN
-F 2 "storage:R_1K5" H 8366 842 50  0001 C CNN
-F 3 "~" H 8366 842 50  0001 C CNN
-	1    8366 842 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7691 942  7741 942 
-Wire Wire Line
-	7741 942  7741 992 
-$Comp
-L Device:C_Small C20
-U 1 1 60E573C7
-P 8116 1092
-F 0 "C20" H 8166 1142 50  0000 L CNN
-F 1 "27uF" H 8166 1042 50  0000 L CNN
-F 2 "storage:C_27pF" H 8116 1092 50  0001 C CNN
-F 3 "~" H 8116 1092 50  0001 C CNN
-	1    8116 1092
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8116 842  8116 992 
-Wire Wire Line
-	8116 842  8266 842 
-Connection ~ 8116 842 
-Text GLabel 7816 942  2    50   Input ~ 0
-XTAL1
-Text GLabel 8541 842  2    50   Input ~ 0
-XTAL2
-Wire Wire Line
-	7741 942  7816 942 
-Connection ~ 7741 942 
-Wire Wire Line
-	7691 842  8116 842 
-Wire Wire Line
-	8466 842  8541 842 
-$Comp
-L power:GND #PWR0123
-U 1 1 60E573D6
-P 7741 1242
-F 0 "#PWR0123" H 7741 992 50  0001 C CNN
-F 1 "GND" H 7741 1117 50  0000 C CNN
-F 2 "" H 7741 1242 50  0001 C CNN
-F 3 "" H 7741 1242 50  0001 C CNN
-	1    7741 1242
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7741 1192 7741 1217
-Wire Wire Line
-	8116 1192 8116 1217
-Wire Wire Line
-	8116 1217 7741 1217
-Connection ~ 7741 1217
-Wire Wire Line
-	7741 1217 7741 1242
-Wire Notes Line
-	7041 1442 8841 1442
-Wire Notes Line
-	7041 492  7041 1442
-Text Notes 8291 1442 0    50   ~ 0
-Crystal 6 MHz
-Text GLabel 5653 1787 1    50   Output ~ 0
-XTAL1
-Text GLabel 5753 1787 1    50   Output ~ 0
-XTAL2
-$Comp
-L power:+3V3 #PWR0125
-U 1 1 60E573F7
-P 6053 1746
-F 0 "#PWR0125" H 6053 1596 50  0001 C CNN
-F 1 "+3V3" H 6068 1919 50  0000 C CNN
-F 2 "" H 6053 1746 50  0001 C CNN
-F 3 "" H 6053 1746 50  0001 C CNN
-	1    6053 1746
-	1    0    0    -1  
-$EndComp
-Text GLabel 5453 4507 3    50   Input ~ 0
-PWRON1
-Text GLabel 5853 4507 3    50   Input ~ 0
-PWRON2
-Text GLabel 6903 3257 2    50   Input ~ 0
-PWRON4
-Text GLabel 6903 3657 2    50   Input ~ 0
-PWRON3
-$Comp
-L power:VBUS #PWR0126
-U 1 1 60E57406
-P 6853 1844
-F 0 "#PWR0126" H 6853 1694 50  0001 C CNN
-F 1 "VBUS" H 6703 1844 50  0000 C CNN
-F 2 "" H 6853 1844 50  0001 C CNN
-F 3 "" H 6853 1844 50  0001 C CNN
-	1    6853 1844
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR0127
-U 1 1 60E5740C
-P 6853 2244
-F 0 "#PWR0127" H 6853 2094 50  0001 C CNN
-F 1 "VBUS" H 6703 2244 50  0000 C CNN
-F 2 "" H 6853 2244 50  0001 C CNN
-F 3 "" H 6853 2244 50  0001 C CNN
-	1    6853 2244
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6853 2269 6853 2244
-Wire Wire Line
-	6853 1869 6853 1844
-Wire Wire Line
-	7178 2169 7228 2169
-Wire Wire Line
-	7178 1769 7228 1769
-$Comp
-L power:GND #PWR0128
-U 1 1 60E57416
-P 7178 1769
-F 0 "#PWR0128" H 7178 1519 50  0001 C CNN
-F 1 "GND" V 7178 1594 50  0000 C CNN
-F 2 "" H 7178 1769 50  0001 C CNN
-F 3 "" H 7178 1769 50  0001 C CNN
-	1    7178 1769
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0129
-U 1 1 60E5741C
-P 7178 2169
-F 0 "#PWR0129" H 7178 1919 50  0001 C CNN
-F 1 "GND" V 7178 1994 50  0000 C CNN
-F 2 "" H 7178 2169 50  0001 C CNN
-F 3 "" H 7178 2169 50  0001 C CNN
-	1    7178 2169
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7228 1869 6853 1869
-Wire Wire Line
-	7228 2269 6853 2269
-Wire Wire Line
-	7128 2469 7228 2469
-Wire Wire Line
-	7128 2369 7228 2369
-Wire Wire Line
-	7128 2069 7228 2069
-Wire Wire Line
-	7128 1969 7228 1969
-Text GLabel 7128 2469 0    50   Output ~ 0
-PWRON4
-Text GLabel 7128 2369 0    50   Output ~ 0
-PWRON3
-Text GLabel 7128 2069 0    50   Output ~ 0
-PWRON2
-Text GLabel 7128 1969 0    50   Output ~ 0
-PWRON1
-$Comp
-L SamacSys_Parts:TPS2044BDR IC6
-U 1 1 60E57432
-P 7228 1769
-F 0 "IC6" H 7878 2034 50  0000 C CNN
-F 1 "TPS2044BDR" H 7878 1943 50  0000 C CNN
-F 2 "SamacSys_Parts:SOIC127P600X175-16N" H 8378 1869 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/tps2044b" H 8378 1769 50  0001 L CNN
-F 4 "Quad Current-Limited Power Distribution Switches" H 8378 1669 50  0001 L CNN "Description"
-F 5 "1.75" H 8378 1569 50  0001 L CNN "Height"
-F 6 "595-TPS2044BDR" H 8378 1469 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS2044BDR?qs=ojKcPFmCWSWjSLiA1%252Bod3Q%3D%3D" H 8378 1369 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 8378 1269 50  0001 L CNN "Manufacturer_Name"
-F 9 "TPS2044BDR" H 8378 1169 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7228 1769
-	1    0    0    -1  
-$EndComp
-Text GLabel 5553 4507 3    50   Input ~ 0
-OVRCUR1
-Text GLabel 5953 4507 3    50   Input ~ 0
-OVRCUR2
-Text GLabel 6903 3557 2    50   Input ~ 0
-OVRCUR3
-Text GLabel 6903 3157 2    50   Input ~ 0
-OVRCUR4
-Text GLabel 8603 1769 2    50   Output ~ 0
-OVRCUR1
-Text GLabel 8603 2069 2    50   Output ~ 0
-OVRCUR2
-Text GLabel 8603 2169 2    50   Output ~ 0
-OVRCUR3
-Text GLabel 8603 2469 2    50   Output ~ 0
-OVRCUR4
-Wire Wire Line
-	8528 1769 8603 1769
-Wire Wire Line
-	8528 2069 8603 2069
-Wire Wire Line
-	8528 2169 8603 2169
-Wire Wire Line
-	8528 2469 8603 2469
-Text GLabel 5653 4507 3    50   Input ~ 0
-D1-
-Text GLabel 5753 4507 3    50   Input ~ 0
-D1+
-Text GLabel 6053 4507 3    50   Input ~ 0
-D2-
-Text GLabel 6153 4507 3    50   Input ~ 0
-D2+
-Text GLabel 6903 3057 2    50   Input ~ 0
-D4-
-Text GLabel 6903 3457 2    50   Input ~ 0
-D3-
-Text GLabel 6903 3357 2    50   Input ~ 0
-D3+
-Text GLabel 6903 2957 2    50   Input ~ 0
-D4+
-$Comp
-L Device:CP_Small C17
-U 1 1 60E57458
-P 4730 1657
-F 0 "C17" H 4818 1703 50  0000 L CNN
-F 1 "4.7uF" H 4818 1612 50  0000 L CNN
-F 2 "storage:C_4.7uF" H 4730 1657 50  0001 C CNN
-F 3 "~" H 4730 1657 50  0001 C CNN
-	1    4730 1657
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4730 1757 4730 1782
-$Comp
-L Device:CP_Small C25
-U 1 1 60E57460
-P 9436 713
-F 0 "C25" H 9261 713 50  0000 L CNN
-F 1 "100uF" H 9211 638 50  0000 L CNN
-F 2 "storage:C_100uF" H 9436 713 50  0001 C CNN
-F 3 "~" H 9436 713 50  0001 C CNN
-	1    9436 713 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C26
-U 1 1 60E57466
-P 9448 1690
-F 0 "C26" H 9298 1690 50  0000 L CNN
-F 1 "100uF" H 9223 1615 50  0000 L CNN
-F 2 "storage:C_100uF" H 9448 1690 50  0001 C CNN
-F 3 "~" H 9448 1690 50  0001 C CNN
-	1    9448 1690
-	1    0    0    -1  
-$EndComp
-Text GLabel 8603 1869 2    50   Input ~ 0
-OUT1
-Text GLabel 8603 1969 2    50   Input ~ 0
-OUT2
-Wire Wire Line
-	8528 1869 8603 1869
-Wire Wire Line
-	8528 1969 8603 1969
-Text GLabel 9361 588  0    50   Output ~ 0
-OUT1
-Text GLabel 9348 1540 0    50   Output ~ 0
-OUT2
-Wire Wire Line
-	9361 588  9436 588 
-Wire Wire Line
-	9436 588  9436 613 
-Connection ~ 9436 588 
-$Comp
-L power:GND #PWR0130
-U 1 1 60E57479
-P 9436 863
-F 0 "#PWR0130" H 9436 613 50  0001 C CNN
-F 1 "GND" H 9436 713 50  0000 C CNN
-F 2 "" H 9436 863 50  0001 C CNN
-F 3 "" H 9436 863 50  0001 C CNN
-	1    9436 863 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9436 813  9436 863 
-Wire Wire Line
-	9348 1540 9448 1540
-Wire Wire Line
-	9448 1540 9448 1590
-Connection ~ 9448 1540
-$Comp
-L power:GND #PWR0131
-U 1 1 60E57483
-P 9448 1865
-F 0 "#PWR0131" H 9448 1615 50  0001 C CNN
-F 1 "GND" H 9448 1715 50  0000 C CNN
-F 2 "" H 9448 1865 50  0001 C CNN
-F 3 "" H 9448 1865 50  0001 C CNN
-	1    9448 1865
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9448 1790 9448 1865
-Wire Wire Line
-	10736 1188 10736 1213
-Wire Wire Line
-	10736 1213 10836 1213
-Wire Wire Line
-	10836 1213 10836 1188
-Connection ~ 10736 1213
-Wire Wire Line
-	10736 1213 10736 1238
-$Comp
-L power:GND #PWR0132
-U 1 1 60E5748F
-P 10736 1238
-F 0 "#PWR0132" H 10736 988 50  0001 C CNN
-F 1 "GND" H 10736 1088 50  0000 C CNN
-F 2 "" H 10736 1238 50  0001 C CNN
-F 3 "" H 10736 1238 50  0001 C CNN
-	1    10736 1238
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0133
-U 1 1 60E57495
-P 10748 2190
-F 0 "#PWR0133" H 10748 1940 50  0001 C CNN
-F 1 "GND" H 10748 2040 50  0000 C CNN
-F 2 "" H 10748 2190 50  0001 C CNN
-F 3 "" H 10748 2190 50  0001 C CNN
-	1    10748 2190
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10748 2140 10748 2165
-Wire Wire Line
-	10848 2140 10848 2165
-Wire Wire Line
-	10848 2165 10748 2165
-Connection ~ 10748 2165
-Wire Wire Line
-	10748 2165 10748 2190
-Text Notes 10496 4375 0    50   ~ 0
-Downstream Ports
-$Comp
-L SamacSys_Parts:SN75240PW IC7
-U 1 1 60E574DA
-P 4072 5750
-F 0 "IC7" H 4672 6015 50  0000 C CNN
-F 1 "SN75240PW" H 4672 5924 50  0000 C CNN
-F 2 "SamacSys_Parts:SOP65P640X120-8N" H 5122 5850 50  0001 L CNN
-F 3 "" H 5122 5750 50  0001 L CNN
-F 4 "Dual USB Port Transient Suppressor" H 5122 5650 50  0001 L CNN "Description"
-F 5 "1.2" H 5122 5550 50  0001 L CNN "Height"
-F 6 "595-SN75240PW" H 5122 5450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN75240PW?qs=q2XTDbzbm6CHHo1l5fz%2Fyw%3D%3D" H 5122 5350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 5122 5250 50  0001 L CNN "Manufacturer_Name"
-F 9 "SN75240PW" H 5122 5150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4072 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R19
-U 1 1 60E574E0
-P 7149 4548
-F 0 "R19" V 7074 4398 50  0000 L CNN
-F 1 "22" V 7074 4573 50  0000 L CNN
-F 2 "storage:R_22" H 7149 4548 50  0001 C CNN
-F 3 "~" H 7149 4548 50  0001 C CNN
-	1    7149 4548
-	0    1    1    0   
-$EndComp
-Text GLabel 6499 4548 0    50   Output ~ 0
-D1-
-Text GLabel 6499 4698 0    50   Output ~ 0
-D1+
-Text GLabel 6499 5398 0    50   Output ~ 0
-D2-
-Text GLabel 6499 5548 0    50   Output ~ 0
-D2+
-$Comp
-L Device:C_Small C21
-U 1 1 60E574EA
-P 6649 4898
-F 0 "C21" H 6699 4948 50  0000 L CNN
-F 1 "22pF" H 6699 4848 50  0000 L CNN
-F 2 "storage:C_22pF" H 6649 4898 50  0001 C CNN
-F 3 "~" H 6649 4898 50  0001 C CNN
-	1    6649 4898
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6499 4548 6649 4548
-Connection ~ 6649 4548
-$Comp
-L power:GND #PWR0135
-U 1 1 60E574F2
-P 6924 5048
-F 0 "#PWR0135" H 6924 4798 50  0001 C CNN
-F 1 "GND" H 6924 4923 50  0000 C CNN
-F 2 "" H 6924 5048 50  0001 C CNN
-F 3 "" H 6924 5048 50  0001 C CNN
-	1    6924 5048
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R20
-U 1 1 60E574F8
-P 7149 4698
-F 0 "R20" V 7074 4548 50  0000 L CNN
-F 1 "22" V 7074 4723 50  0000 L CNN
-F 2 "storage:R_22" H 7149 4698 50  0001 C CNN
-F 3 "~" H 7149 4698 50  0001 C CNN
-	1    7149 4698
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C23
-U 1 1 60E574FE
-P 6924 4898
-F 0 "C23" H 6974 4948 50  0000 L CNN
-F 1 "22pF" H 6974 4848 50  0000 L CNN
-F 2 "storage:C_22pF" H 6924 4898 50  0001 C CNN
-F 3 "~" H 6924 4898 50  0001 C CNN
-	1    6924 4898
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6649 4548 7049 4548
-Wire Wire Line
-	6649 4548 6649 4798
-$Comp
-L power:GND #PWR0136
-U 1 1 60E57506
-P 6649 5048
-F 0 "#PWR0136" H 6649 4798 50  0001 C CNN
-F 1 "GND" H 6649 4923 50  0000 C CNN
-F 2 "" H 6649 5048 50  0001 C CNN
-F 3 "" H 6649 5048 50  0001 C CNN
-	1    6649 5048
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6649 4998 6649 5048
-Wire Wire Line
-	6924 4998 6924 5048
-Wire Wire Line
-	6924 4798 6924 4698
-Wire Wire Line
-	6924 4698 7049 4698
-$Comp
-L Device:R_Small R23
-U 1 1 60E57512
-P 7374 4898
-F 0 "R23" H 7249 4848 50  0000 L CNN
-F 1 "15k" H 7199 4948 50  0000 L CNN
-F 2 "storage:R_15K" H 7374 4898 50  0001 C CNN
-F 3 "~" H 7374 4898 50  0001 C CNN
-	1    7374 4898
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R25
-U 1 1 60E57518
-P 7649 4898
-F 0 "R25" H 7524 4848 50  0000 L CNN
-F 1 "15k" H 7474 4948 50  0000 L CNN
-F 2 "storage:R_15K" H 7649 4898 50  0001 C CNN
-F 3 "~" H 7649 4898 50  0001 C CNN
-	1    7649 4898
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7249 4548 7649 4548
-Wire Wire Line
-	7649 4548 7649 4798
-Wire Wire Line
-	7249 4698 7374 4698
-Wire Wire Line
-	7374 4698 7374 4798
-$Comp
-L power:GND #PWR0137
-U 1 1 60E57522
-P 7374 5048
-F 0 "#PWR0137" H 7374 4798 50  0001 C CNN
-F 1 "GND" H 7374 4923 50  0000 C CNN
-F 2 "" H 7374 5048 50  0001 C CNN
-F 3 "" H 7374 5048 50  0001 C CNN
-	1    7374 5048
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0138
-U 1 1 60E57528
-P 7649 5048
-F 0 "#PWR0138" H 7649 4798 50  0001 C CNN
-F 1 "GND" H 7649 4923 50  0000 C CNN
-F 2 "" H 7649 5048 50  0001 C CNN
-F 3 "" H 7649 5048 50  0001 C CNN
-	1    7649 5048
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7374 4998 7374 5048
-Wire Wire Line
-	7649 4998 7649 5048
-$Comp
-L Device:R_Small R21
-U 1 1 60E57530
-P 7149 5398
-F 0 "R21" V 7074 5248 50  0000 L CNN
-F 1 "22" V 7074 5423 50  0000 L CNN
-F 2 "storage:R_22" H 7149 5398 50  0001 C CNN
-F 3 "~" H 7149 5398 50  0001 C CNN
-	1    7149 5398
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C22
-U 1 1 60E57536
-P 6649 5748
-F 0 "C22" H 6699 5798 50  0000 L CNN
-F 1 "22pF" H 6699 5698 50  0000 L CNN
-F 2 "storage:C_22pF" H 6649 5748 50  0001 C CNN
-F 3 "~" H 6649 5748 50  0001 C CNN
-	1    6649 5748
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6499 5398 6649 5398
-Connection ~ 6649 5398
-$Comp
-L power:GND #PWR0139
-U 1 1 60E5753E
-P 6924 5898
-F 0 "#PWR0139" H 6924 5648 50  0001 C CNN
-F 1 "GND" H 6924 5773 50  0000 C CNN
-F 2 "" H 6924 5898 50  0001 C CNN
-F 3 "" H 6924 5898 50  0001 C CNN
-	1    6924 5898
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R22
-U 1 1 60E57544
-P 7149 5548
-F 0 "R22" V 7074 5398 50  0000 L CNN
-F 1 "22" V 7074 5573 50  0000 L CNN
-F 2 "storage:R_22" H 7149 5548 50  0001 C CNN
-F 3 "~" H 7149 5548 50  0001 C CNN
-	1    7149 5548
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C24
-U 1 1 60E5754A
-P 6924 5748
-F 0 "C24" H 6974 5798 50  0000 L CNN
-F 1 "22pF" H 6974 5698 50  0000 L CNN
-F 2 "storage:C_22pF" H 6924 5748 50  0001 C CNN
-F 3 "~" H 6924 5748 50  0001 C CNN
-	1    6924 5748
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6649 5398 7049 5398
-Wire Wire Line
-	6649 5398 6649 5648
-$Comp
-L power:GND #PWR0140
-U 1 1 60E57552
-P 6649 5898
-F 0 "#PWR0140" H 6649 5648 50  0001 C CNN
-F 1 "GND" H 6649 5773 50  0000 C CNN
-F 2 "" H 6649 5898 50  0001 C CNN
-F 3 "" H 6649 5898 50  0001 C CNN
-	1    6649 5898
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6649 5848 6649 5898
-Wire Wire Line
-	6924 5848 6924 5898
-Wire Wire Line
-	6499 5548 6924 5548
-Wire Wire Line
-	6924 5648 6924 5548
-Connection ~ 6924 5548
-Wire Wire Line
-	6924 5548 7049 5548
-$Comp
-L Device:R_Small R24
-U 1 1 60E5755E
-P 7374 5748
-F 0 "R24" H 7249 5698 50  0000 L CNN
-F 1 "15k" H 7199 5798 50  0000 L CNN
-F 2 "storage:R_15K" H 7374 5748 50  0001 C CNN
-F 3 "~" H 7374 5748 50  0001 C CNN
-	1    7374 5748
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R26
-U 1 1 60E57564
-P 7649 5748
-F 0 "R26" H 7524 5698 50  0000 L CNN
-F 1 "15k" H 7474 5798 50  0000 L CNN
-F 2 "storage:R_15K" H 7649 5748 50  0001 C CNN
-F 3 "~" H 7649 5748 50  0001 C CNN
-	1    7649 5748
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7249 5398 7649 5398
-Wire Wire Line
-	7649 5398 7649 5648
-Wire Wire Line
-	7249 5548 7374 5548
-$Comp
-L power:GND #PWR0141
-U 1 1 60E5756D
-P 7374 5898
-F 0 "#PWR0141" H 7374 5648 50  0001 C CNN
-F 1 "GND" H 7374 5773 50  0000 C CNN
-F 2 "" H 7374 5898 50  0001 C CNN
-F 3 "" H 7374 5898 50  0001 C CNN
-	1    7374 5898
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0142
-U 1 1 60E57573
-P 7649 5898
-F 0 "#PWR0142" H 7649 5648 50  0001 C CNN
-F 1 "GND" H 7649 5773 50  0000 C CNN
-F 2 "" H 7649 5898 50  0001 C CNN
-F 3 "" H 7649 5898 50  0001 C CNN
-	1    7649 5898
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7374 5848 7374 5898
-Wire Wire Line
-	7649 5848 7649 5898
-Text GLabel 8124 4698 2    50   Input ~ 0
-D_DS_1_+
-Wire Wire Line
-	7374 4698 8124 4698
-Connection ~ 7374 4698
-Wire Wire Line
-	8124 4548 7649 4548
-Connection ~ 7649 4548
-Text GLabel 8099 5548 2    50   Input ~ 0
-D_DS_2_+
-Text GLabel 10311 888  0    50   Output ~ 0
-D_DS_1_-
-Text GLabel 10311 788  0    50   Output ~ 0
-D_DS_1_+
-Wire Wire Line
-	9436 588  10436 588 
-Wire Wire Line
-	10311 788  10436 788 
-Wire Wire Line
-	10311 888  10436 888 
-Text GLabel 10323 1840 0    50   Output ~ 0
-D_DS_2_-
-Text GLabel 10323 1740 0    50   Output ~ 0
-D_DS_2_+
-Wire Wire Line
-	10323 1740 10448 1740
-Wire Wire Line
-	10323 1840 10448 1840
-Wire Wire Line
-	9448 1540 10448 1540
-Wire Wire Line
-	7649 5398 8099 5398
-Connection ~ 7649 5398
-Wire Wire Line
-	8099 5548 7374 5548
-Connection ~ 7374 5548
-Wire Wire Line
-	7374 5548 7374 5648
-Text GLabel 8099 5398 2    50   Input ~ 0
-D_DS_2_-
-Text GLabel 3922 6050 0    50   Output ~ 0
-D_DS_2_-
-Text GLabel 3922 5850 0    50   Output ~ 0
-D_DS_2_+
-Wire Wire Line
-	3922 5850 4072 5850
-Wire Wire Line
-	3922 6050 4072 6050
-$Comp
-L power:GND #PWR0143
-U 1 1 60E57596
-P 4022 5950
-F 0 "#PWR0143" H 4022 5700 50  0001 C CNN
-F 1 "GND" V 4022 5750 50  0000 C CNN
-F 2 "" H 4022 5950 50  0001 C CNN
-F 3 "" H 4022 5950 50  0001 C CNN
-	1    4022 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0144
-U 1 1 60E5759C
-P 4022 5750
-F 0 "#PWR0144" H 4022 5500 50  0001 C CNN
-F 1 "GND" V 4022 5550 50  0000 C CNN
-F 2 "" H 4022 5750 50  0001 C CNN
-F 3 "" H 4022 5750 50  0001 C CNN
-	1    4022 5750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4022 5750 4072 5750
-Wire Wire Line
-	4022 5950 4072 5950
-$Comp
-L power:GND #PWR0145
-U 1 1 60E575A4
-P 5322 6050
-F 0 "#PWR0145" H 5322 5800 50  0001 C CNN
-F 1 "GND" V 5322 5850 50  0000 C CNN
-F 2 "" H 5322 6050 50  0001 C CNN
-F 3 "" H 5322 6050 50  0001 C CNN
-	1    5322 6050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5272 6050 5322 6050
-$Comp
-L power:GND #PWR0146
-U 1 1 60E575AB
-P 5322 5850
-F 0 "#PWR0146" H 5322 5600 50  0001 C CNN
-F 1 "GND" V 5322 5650 50  0000 C CNN
-F 2 "" H 5322 5850 50  0001 C CNN
-F 3 "" H 5322 5850 50  0001 C CNN
-	1    5322 5850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5272 5850 5322 5850
-Text GLabel 5422 5950 2    50   Output ~ 0
-D_DS_1_-
-Wire Wire Line
-	5272 5950 5422 5950
-Text GLabel 5422 5750 2    50   Output ~ 0
-D_DS_1_+
-Wire Wire Line
-	5272 5750 5422 5750
-Wire Notes Line
-	6966 6242 6966 6542
 Text Notes 10541 6542 0    50   ~ 0
 HUB-TUSB2046
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 60E575B8
-P 3566 6542
-F 0 "H1" V 3803 6545 50  0000 C CNN
-F 1 "MountingHole_Pad" V 3712 6545 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3566 6542 50  0001 C CNN
-F 3 "~" H 3566 6542 50  0001 C CNN
-	1    3566 6542
+P 9266 1442
+F 0 "H1" V 9503 1445 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9412 1445 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9266 1442 50  0001 C CNN
+F 3 "~" H 9266 1442 50  0001 C CNN
+	1    9266 1442
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 60E575BE
-P 3566 6917
-F 0 "H2" V 3803 6920 50  0000 C CNN
-F 1 "MountingHole_Pad" V 3712 6920 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3566 6917 50  0001 C CNN
-F 3 "~" H 3566 6917 50  0001 C CNN
-	1    3566 6917
+P 9266 1817
+F 0 "H2" V 9503 1820 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9412 1820 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9266 1817 50  0001 C CNN
+F 3 "~" H 9266 1817 50  0001 C CNN
+	1    9266 1817
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 60E575C4
-P 3566 7292
-F 0 "H3" V 3803 7295 50  0000 C CNN
-F 1 "MountingHole_Pad" V 3712 7295 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3566 7292 50  0001 C CNN
-F 3 "~" H 3566 7292 50  0001 C CNN
-	1    3566 7292
+P 9266 2192
+F 0 "H3" V 9503 2195 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9412 2195 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9266 2192 50  0001 C CNN
+F 3 "~" H 9266 2192 50  0001 C CNN
+	1    9266 2192
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 60E575CA
-P 3566 7667
-F 0 "H4" V 3803 7670 50  0000 C CNN
-F 1 "MountingHole_Pad" V 3712 7670 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3566 7667 50  0001 C CNN
-F 3 "~" H 3566 7667 50  0001 C CNN
-	1    3566 7667
+P 9266 2567
+F 0 "H4" V 9503 2570 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9412 2570 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9266 2567 50  0001 C CNN
+F 3 "~" H 9266 2567 50  0001 C CNN
+	1    9266 2567
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0147
+L power:GND #PWR05
 U 1 1 60E575D0
-P 4241 6542
-F 0 "#PWR0147" H 4241 6292 50  0001 C CNN
-F 1 "GND" V 4141 6467 50  0000 C CNN
-F 2 "" H 4241 6542 50  0001 C CNN
-F 3 "" H 4241 6542 50  0001 C CNN
-	1    4241 6542
+P 9941 1442
+F 0 "#PWR05" H 9941 1192 50  0001 C CNN
+F 1 "GND" V 9841 1367 50  0000 C CNN
+F 2 "" H 9941 1442 50  0001 C CNN
+F 3 "" H 9941 1442 50  0001 C CNN
+	1    9941 1442
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3666 6542 3941 6542
+	9366 1442 9641 1442
 Wire Wire Line
-	3666 6917 3941 6917
+	9366 1817 9641 1817
 Wire Wire Line
-	3941 6542 3941 6917
+	9641 1442 9641 1817
 Wire Wire Line
-	3666 7292 3941 7292
+	9366 2192 9641 2192
 Wire Wire Line
-	3941 7292 3941 6917
-Connection ~ 3941 6917
+	9641 2192 9641 1817
+Connection ~ 9641 1817
 Wire Wire Line
-	3666 7667 3941 7667
+	9366 2567 9641 2567
 Wire Wire Line
-	3941 7667 3941 7292
-Connection ~ 3941 7292
+	9641 2567 9641 2192
+Connection ~ 9641 2192
 Wire Wire Line
-	3941 6542 4241 6542
-Wire Notes Line
-	3091 6242 6966 6242
-Text Notes 3941 7792 0    50   ~ 0
+	9641 1442 9941 1442
+Text Notes 9641 2692 0    50   ~ 0
 Mountingholes
-Connection ~ 3941 6542
-Wire Notes Line
-	4516 7817 4516 6242
+Connection ~ 9641 1442
 Wire Wire Line
-	2141 4917 2191 4917
+	2141 1117 2191 1117
 Wire Wire Line
-	1816 4817 2191 4817
-$Comp
-L Device:R_Small R1
-U 1 1 60E575E6
-P 616 1692
-F 0 "R1" V 691 1592 50  0000 L CNN
-F 1 "22" V 691 1717 50  0000 L CNN
-F 2 "storage:R_22" H 616 1692 50  0001 C CNN
-F 3 "~" H 616 1692 50  0001 C CNN
-	1    616  1692
-	-1   0    0    1   
-$EndComp
-Connection ~ 716  1867
-Wire Wire Line
-	716  1867 791  1867
-Wire Wire Line
-	716  1517 716  1867
-Connection ~ 616  1867
-Wire Wire Line
-	616  1792 616  1867
-Wire Wire Line
-	616  1517 616  1592
-Wire Wire Line
-	616  1967 616  1867
-Wire Wire Line
-	616  1867 716  1867
-$Comp
-L power:GND #PWR0148
-U 1 1 60E575F4
-P 616 1967
-F 0 "#PWR0148" H 616 1717 50  0001 C CNN
-F 1 "GND" H 621 1794 50  0000 C CNN
-F 2 "" H 616 1967 50  0001 C CNN
-F 3 "" H 616 1967 50  0001 C CNN
-	1    616  1967
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2666 2167
-NoConn ~ 2666 1967
-Connection ~ 2766 2267
-Wire Wire Line
-	2766 2067 2766 2267
-Wire Wire Line
-	2666 2067 2766 2067
-Wire Wire Line
-	2766 2267 2766 2292
-Wire Wire Line
-	2666 2267 2766 2267
-Connection ~ 1391 2167
-Wire Wire Line
-	1391 2167 1391 2342
-$Comp
-L power:GND #PWR0149
-U 1 1 60E57603
-P 2766 2292
-F 0 "#PWR0149" H 2766 2042 50  0001 C CNN
-F 1 "GND" H 2771 2119 50  0000 C CNN
-F 2 "" H 2766 2292 50  0001 C CNN
-F 3 "" H 2766 2292 50  0001 C CNN
-	1    2766 2292
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1466 2167 1391 2167
-Wire Wire Line
-	1391 1967 1391 2167
-Wire Wire Line
-	1466 1967 1391 1967
-Wire Wire Line
-	1266 1217 1666 1217
-Connection ~ 1266 1217
-Wire Wire Line
-	1266 2267 1266 1217
-Wire Wire Line
-	1466 2267 1266 2267
-Wire Wire Line
-	1366 1117 1666 1117
-Connection ~ 1366 1117
-Wire Wire Line
-	1366 2067 1366 1117
-Wire Wire Line
-	1466 2067 1366 2067
-Wire Wire Line
-	1016 1117 1366 1117
-Wire Wire Line
-	1016 1217 1266 1217
-$Comp
-L SamacSys_Parts:SN75240PW IC1
-U 1 1 60E5761C
-P 1466 1967
-F 0 "IC1" H 2391 2017 50  0000 C CNN
-F 1 "SN75240PW" H 2016 1617 50  0000 C CNN
-F 2 "SamacSys_Parts:SOP65P640X120-8N" H 2516 2067 50  0001 L CNN
-F 3 "" H 2516 1967 50  0001 L CNN
-F 4 "Dual USB Port Transient Suppressor" H 2516 1867 50  0001 L CNN "Description"
-F 5 "1.2" H 2516 1767 50  0001 L CNN "Height"
-F 6 "595-SN75240PW" H 2516 1667 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN75240PW?qs=q2XTDbzbm6CHHo1l5fz%2Fyw%3D%3D" H 2516 1567 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 2516 1467 50  0001 L CNN "Manufacturer_Name"
-F 9 "SN75240PW" H 2516 1367 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1466 1967
-	1    0    0    -1  
-$EndComp
-Connection ~ 1116 917 
-Wire Wire Line
-	1166 917  1116 917 
-$Comp
-L Connector:TestPoint GND1
-U 1 1 60E57624
-P 791 1867
-F 0 "GND1" V 716 1917 50  0000 C CNN
-F 1 "GND" V 891 1942 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 991 1867 50  0001 C CNN
-F 3 "~" H 991 1867 50  0001 C CNN
-	1    791  1867
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint VBUS1
-U 1 1 60E5762A
-P 1166 917
-F 0 "VBUS1" V 1091 967 50  0000 C CNN
-F 1 "VBUS" V 1266 992 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1366 917 50  0001 C CNN
-F 3 "~" H 1366 917 50  0001 C CNN
-	1    1166 917 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1966 717  1966 792 
-$Comp
-L power:+3V3 #PWR0150
-U 1 1 60E57631
-P 1966 717
-F 0 "#PWR0150" H 1966 567 50  0001 C CNN
-F 1 "+3V3" H 1981 890 50  0000 C CNN
-F 2 "" H 1966 717 50  0001 C CNN
-F 3 "" H 1966 717 50  0001 C CNN
-	1    1966 717 
-	1    0    0    -1  
-$EndComp
-Connection ~ 1966 1217
-Wire Wire Line
-	2641 1217 1966 1217
-Connection ~ 2391 1117
-Wire Wire Line
-	2641 1117 2391 1117
-Wire Wire Line
-	2391 1467 2391 1542
-Wire Wire Line
-	1966 1467 1966 1542
-$Comp
-L power:GND #PWR0151
-U 1 1 60E5763D
-P 2391 1542
-F 0 "#PWR0151" H 2391 1292 50  0001 C CNN
-F 1 "GND" H 2396 1369 50  0000 C CNN
-F 2 "" H 2391 1542 50  0001 C CNN
-F 3 "" H 2391 1542 50  0001 C CNN
-	1    2391 1542
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0152
-U 1 1 60E57643
-P 1966 1542
-F 0 "#PWR0152" H 1966 1292 50  0001 C CNN
-F 1 "GND" H 1971 1369 50  0000 C CNN
-F 2 "" H 1966 1542 50  0001 C CNN
-F 3 "" H 1966 1542 50  0001 C CNN
-	1    1966 1542
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1966 1117 2391 1117
-Connection ~ 1966 1117
-Wire Wire Line
-	1966 992  1966 1117
-Wire Wire Line
-	1866 1117 1966 1117
-Wire Wire Line
-	2391 1117 2391 1267
-$Comp
-L Device:C_Small C7
-U 1 1 60E5764E
-P 2391 1367
-F 0 "C7" H 2441 1417 50  0000 L CNN
-F 1 "22pF" H 2441 1317 50  0000 L CNN
-F 2 "storage:C_22pF" H 2391 1367 50  0001 C CNN
-F 3 "~" H 2391 1367 50  0001 C CNN
-	1    2391 1367
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1866 1217 1966 1217
-Wire Wire Line
-	1966 1217 1966 1267
-$Comp
-L Device:C_Small C5
-U 1 1 60E57656
-P 1966 1367
-F 0 "C5" H 2016 1417 50  0000 L CNN
-F 1 "22pF" H 2016 1317 50  0000 L CNN
-F 2 "storage:C_22pF" H 1966 1367 50  0001 C CNN
-F 3 "~" H 1966 1367 50  0001 C CNN
-	1    1966 1367
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 60E5765C
-P 1966 892
-F 0 "R6" H 1841 792 50  0000 L CNN
-F 1 "1.5k" H 1766 992 50  0000 L CNN
-F 2 "storage:R_1K5" H 1966 892 50  0001 C CNN
-F 3 "~" H 1966 892 50  0001 C CNN
-	1    1966 892 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 60E57662
-P 1766 1217
-F 0 "R4" V 1841 1117 50  0000 L CNN
-F 1 "22" V 1841 1242 50  0000 L CNN
-F 2 "storage:R_22" H 1766 1217 50  0001 C CNN
-F 3 "~" H 1766 1217 50  0001 C CNN
-	1    1766 1217
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 60E57668
-P 1766 1117
-F 0 "R3" V 1691 1017 50  0000 L CNN
-F 1 "22" V 1691 1142 50  0000 L CNN
-F 2 "storage:R_22" H 1766 1117 50  0001 C CNN
-F 3 "~" H 1766 1117 50  0001 C CNN
-	1    1766 1117
-	0    1    1    0   
-$EndComp
-Text GLabel 2641 1217 2    50   Input ~ 0
-D0-
-Text GLabel 2641 1117 2    50   Input ~ 0
-D0+
-Connection ~ 2991 892 
-Wire Wire Line
-	2991 842  2991 892 
-$Comp
-L power:VBUS #PWR0153
-U 1 1 60E57672
-P 2991 842
-F 0 "#PWR0153" H 2991 692 50  0001 C CNN
-F 1 "VBUS" H 3006 1015 50  0000 C CNN
-F 2 "" H 2991 842 50  0001 C CNN
-F 3 "" H 2991 842 50  0001 C CNN
-	1    2991 842 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1116 917  1116 867 
-Wire Wire Line
-	1016 917  1116 917 
-$Comp
-L Device:CP_Small C12
-U 1 1 60E5767A
-P 3341 1092
-F 0 "C12" H 3429 1138 50  0000 L CNN
-F 1 "4.7uF" H 3429 1047 50  0000 L CNN
-F 2 "storage:C_4.7uF" H 3341 1092 50  0001 C CNN
-F 3 "~" H 3341 1092 50  0001 C CNN
-	1    3341 1092
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1016 1317
-$Comp
-L power:GND #PWR0154
-U 1 1 60E57681
-P 1391 2342
-F 0 "#PWR0154" H 1391 2092 50  0001 C CNN
-F 1 "GND" H 1396 2169 50  0000 C CNN
-F 2 "" H 1391 2342 50  0001 C CNN
-F 3 "" H 1391 2342 50  0001 C CNN
-	1    1391 2342
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR0155
-U 1 1 60E57687
-P 1116 867
-F 0 "#PWR0155" H 1116 717 50  0001 C CNN
-F 1 "VBUS" H 1131 1040 50  0000 C CNN
-F 2 "" H 1116 867 50  0001 C CNN
-F 3 "" H 1116 867 50  0001 C CNN
-	1    1116 867 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 60E5768D
-P 2991 1092
-F 0 "C11" H 3041 1142 50  0000 L CNN
-F 1 "0.1uF" H 3041 1042 50  0000 L CNN
-F 2 "storage:C_0.1uF" H 2991 1092 50  0001 C CNN
-F 3 "~" H 2991 1092 50  0001 C CNN
-	1    2991 1092
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0156
-U 1 1 60E57693
-P 2991 1292
-F 0 "#PWR0156" H 2991 1042 50  0001 C CNN
-F 1 "GND" H 2996 1119 50  0000 C CNN
-F 2 "" H 2991 1292 50  0001 C CNN
-F 3 "" H 2991 1292 50  0001 C CNN
-	1    2991 1292
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2991 892  2991 992 
-Wire Wire Line
-	3341 892  2991 892 
-Wire Wire Line
-	2991 1192 2991 1242
-Connection ~ 2991 1242
-Wire Wire Line
-	3341 1242 2991 1242
-Wire Wire Line
-	2991 1242 2991 1292
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 60E5769F
-P 716 1117
-F 0 "J1" H 866 1467 50  0000 C CNN
-F 1 "USB_B_Micro" H 966 767 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 866 1067 50  0001 C CNN
-F 3 "~" H 866 1067 50  0001 C CNN
-	1    716  1117
-	1    0    0    -1  
-$EndComp
-Text GLabel 5041 6417 0    50   Output ~ 0
-3V3_Buck_1
-Text GLabel 5041 6917 0    50   Output ~ 0
-3V3_Buck_2
-Text GLabel 5041 7417 0    50   Output ~ 0
-3V3_LDO
-$Comp
-L Device:LED_Small Buck_1
-U 1 1 60E576A8
-P 5341 6417
-F 0 "Buck_1" H 5341 6342 50  0000 C CNN
-F 1 "Buck_1" H 5341 6542 50  0000 C CNN
-F 2 "SamacSys_Parts:LEDC3214X78N" V 5341 6417 50  0001 C CNN
-F 3 "~" V 5341 6417 50  0001 C CNN
-	1    5341 6417
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small Buck_2
-U 1 1 60E576AE
-P 5341 6917
-F 0 "Buck_2" H 5341 6842 50  0000 C CNN
-F 1 "Buck_2" H 5341 7042 50  0000 C CNN
-F 2 "SamacSys_Parts:LEDC3214X78N" V 5341 6917 50  0001 C CNN
-F 3 "~" V 5341 6917 50  0001 C CNN
-	1    5341 6917
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED_Small LDO1
-U 1 1 60E576B4
-P 5341 7417
-F 0 "LDO1" H 5341 7342 50  0000 C CNN
-F 1 "LDO" H 5341 7542 50  0000 C CNN
-F 2 "SamacSys_Parts:LEDC3214X78N" V 5341 7417 50  0001 C CNN
-F 3 "~" V 5341 7417 50  0001 C CNN
-	1    5341 7417
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R11
-U 1 1 60E576BA
-P 5691 6417
-F 0 "R11" V 5766 6442 50  0000 L CNN
-F 1 "1k" V 5766 6267 50  0000 L CNN
-F 2 "storage:R_1K" H 5691 6417 50  0001 C CNN
-F 3 "~" H 5691 6417 50  0001 C CNN
-	1    5691 6417
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R12
-U 1 1 60E576C0
-P 5691 6917
-F 0 "R12" V 5766 6942 50  0000 L CNN
-F 1 "1k" V 5766 6767 50  0000 L CNN
-F 2 "storage:R_1K" H 5691 6917 50  0001 C CNN
-F 3 "~" H 5691 6917 50  0001 C CNN
-	1    5691 6917
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R13
-U 1 1 60E576C6
-P 5691 7417
-F 0 "R13" V 5766 7442 50  0000 L CNN
-F 1 "1k" V 5766 7267 50  0000 L CNN
-F 2 "storage:R_1K" H 5691 7417 50  0001 C CNN
-F 3 "~" H 5691 7417 50  0001 C CNN
-	1    5691 7417
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5041 6417 5241 6417
-Wire Wire Line
-	5441 6417 5591 6417
-Wire Wire Line
-	5791 6417 6091 6417
-Wire Wire Line
-	6091 6417 6091 6917
-Wire Wire Line
-	5791 6917 6091 6917
-Connection ~ 6091 6917
-Wire Wire Line
-	6091 6917 6091 7417
-Wire Wire Line
-	5791 7417 6091 7417
-Connection ~ 6091 7417
-Wire Wire Line
-	6091 7417 6091 7517
-Wire Wire Line
-	5441 7417 5591 7417
-Wire Wire Line
-	5441 6917 5591 6917
-Wire Wire Line
-	5041 6917 5241 6917
-Wire Wire Line
-	5041 7417 5241 7417
+	1816 1017 2191 1017
 Text Notes 6191 7767 0    50   ~ 0
 LED-PowerSwichtes
 $Comp
-L power:GND #PWR0157
-U 1 1 60E576DB
-P 6091 7517
-F 0 "#PWR0157" H 6091 7267 50  0001 C CNN
-F 1 "GND" H 6091 7367 50  0000 C CNN
-F 2 "" H 6091 7517 50  0001 C CNN
-F 3 "" H 6091 7517 50  0001 C CNN
-	1    6091 7517
-	1    0    0    -1  
-$EndComp
-Connection ~ 4730 1532
-Wire Wire Line
-	4730 1532 4730 1557
-Connection ~ 4730 1782
-Wire Wire Line
-	4730 1782 4730 1807
-Connection ~ 6924 4698
-Wire Wire Line
-	6499 4698 6924 4698
-Text GLabel 8124 4548 2    50   Input ~ 0
-D_DS_1_-
-Wire Wire Line
-	6753 2957 6903 2957
-Wire Wire Line
-	6753 3157 6903 3157
-Wire Wire Line
-	6753 3057 6903 3057
-Wire Wire Line
-	6753 3257 6903 3257
-Wire Wire Line
-	6753 3357 6903 3357
-Wire Wire Line
-	6753 3457 6903 3457
-Wire Wire Line
-	6753 3557 6903 3557
-Wire Wire Line
-	6753 3657 6903 3657
-$Comp
-L SamacSys_Parts:TUSB2046IBVF IC5
-U 1 1 60E57338
-P 4953 2957
-F 0 "IC5" H 5803 3157 50  0000 L CNN
-F 1 "TUSB2046IBVF" H 5603 3057 50  0000 L CNN
-F 2 "SamacSys_Parts:QFP80P900X900X160-32N" H 6603 3857 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/tusb2046i" H 6603 3757 50  0001 L CNN
-F 4 "4-port 12-Mbps USB full-speed hub with optional serial EEPROM interface" H 6603 3657 50  0001 L CNN "Description"
-F 5 "1.6" H 6603 3557 50  0001 L CNN "Height"
-F 6 "595-TUSB2046IBVF" H 6603 3457 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TUSB2046IBVF?qs=HXFqYaX1Q2zoacj5Hiwo4Q%3D%3D" H 6603 3357 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 6603 3257 50  0001 L CNN "Manufacturer_Name"
-F 9 "TUSB2046IBVF" H 6603 3157 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4953 2957
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5453 4457 5453 4507
-Wire Wire Line
-	5553 4457 5553 4507
-Wire Wire Line
-	5653 4457 5653 4507
-Wire Wire Line
-	5753 4457 5753 4507
-Wire Wire Line
-	5853 4457 5853 4507
-Wire Wire Line
-	5953 4457 5953 4507
-Wire Wire Line
-	6053 4457 6053 4507
-Wire Wire Line
-	6153 4457 6153 4507
-Wire Wire Line
-	6153 1787 6153 1857
-Wire Wire Line
-	5753 1787 5753 1857
-Wire Wire Line
-	5653 1787 5653 1857
-$Comp
-L power:GND #PWR0124
-U 1 1 60E573E8
-P 5553 1497
-F 0 "#PWR0124" H 5553 1247 50  0001 C CNN
-F 1 "GND" H 5528 1347 50  0000 C CNN
-F 2 "" H 5553 1497 50  0001 C CNN
-F 3 "" H 5553 1497 50  0001 C CNN
-	1    5553 1497
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5553 1497 5553 1507
-Wire Wire Line
-	5553 1507 5853 1507
-Wire Wire Line
-	5853 1507 5853 1857
-Connection ~ 5553 1507
-Wire Wire Line
-	5553 1507 5553 1857
-Wire Wire Line
-	5853 1507 5953 1507
-Wire Wire Line
-	5953 1507 5953 1857
-Connection ~ 5853 1507
-NoConn ~ 5453 1857
-Wire Wire Line
-	4953 3457 4883 3457
-Wire Wire Line
-	4883 3457 4883 3557
-Wire Wire Line
-	4953 3557 4883 3557
-Connection ~ 4883 3557
-Wire Wire Line
-	4953 3657 4883 3657
-Wire Wire Line
-	4883 3557 4883 3657
-Connection ~ 4883 3657
-Wire Wire Line
-	4883 3657 4883 3717
-NoConn ~ 4953 3357
-Wire Wire Line
-	4903 3157 4953 3157
-$Comp
-L power:GND #PWR0121
-U 1 1 60E57393
-P 4043 3357
-F 0 "#PWR0121" H 4043 3107 50  0001 C CNN
-F 1 "GND" H 4043 3232 50  0000 C CNN
-F 2 "" H 4043 3357 50  0001 C CNN
-F 3 "" H 4043 3357 50  0001 C CNN
-	1    4043 3357
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4043 3307 4043 3337
-Wire Wire Line
-	4363 3307 4363 3337
-Wire Wire Line
-	4363 3337 4043 3337
-Connection ~ 4043 3337
-Wire Wire Line
-	4043 3337 4043 3357
-Wire Wire Line
-	3973 2957 4363 2957
-Wire Wire Line
-	4363 3107 4363 2957
-Connection ~ 4363 2957
-Wire Wire Line
-	4363 2957 4873 2957
-Wire Wire Line
-	3973 3057 4043 3057
-Wire Wire Line
-	4043 3107 4043 3057
-Connection ~ 4043 3057
-Wire Wire Line
-	4043 3057 4953 3057
-$Comp
-L power:+3V3 #PWR0116
-U 1 1 60E57329
-P 4873 2587
-F 0 "#PWR0116" H 4873 2437 50  0001 C CNN
-F 1 "+3V3" H 4888 2760 50  0000 C CNN
-F 2 "" H 4873 2587 50  0001 C CNN
-F 3 "" H 4873 2587 50  0001 C CNN
-	1    4873 2587
+L SamacSys_Parts:TUSB8041IPAPRQ1 IC2
+U 1 1 60C921D6
+P 4000 3650
+F 0 "IC2" H 5250 2300 50  0000 L CNN
+F 1 "TUSB8041IPAPRQ1" H 5000 2150 50  0000 L CNN
+F 2 "QFP50P1200X1200X120-65N" H 6450 4550 50  0001 L CNN
+F 3 "" H 6450 4450 50  0001 L CNN
+F 4 "Automotive Four-Port SuperSpeed 5.0Gbps USB 3.0 Hub" H 6450 4350 50  0001 L CNN "Description"
+F 5 "1.2" H 6450 4250 50  0001 L CNN "Height"
+F 6 "595-TUSB8041IPAPRQ1" H 6450 4150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TUSB8041IPAPRQ1?qs=m%2F7bTylgptdYho%252BMsCPxJw%3D%3D" H 6450 4050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 6450 3950 50  0001 L CNN "Manufacturer_Name"
+F 9 "TUSB8041IPAPRQ1" H 6450 3850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4000 3650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R10
-U 1 1 60E57323
-P 4873 2757
-F 0 "R10" H 4913 2817 50  0000 L CNN
-F 1 "1.5k" H 4923 2707 50  0000 L CNN
-F 2 "storage:R_1K5" H 4873 2757 50  0001 C CNN
-F 3 "~" H 4873 2757 50  0001 C CNN
-	1    4873 2757
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4873 2857 4873 2957
-Connection ~ 4873 2957
-Wire Wire Line
-	4873 2957 4953 2957
-Wire Wire Line
-	4873 2587 4873 2657
-Wire Wire Line
-	6720 820  6880 820 
-Wire Wire Line
-	6880 820  6880 790 
-Wire Wire Line
-	6720 920  6880 920 
-Wire Wire Line
-	6880 920  6880 820 
-Connection ~ 6880 820 
-Wire Wire Line
-	6720 1020 6880 1020
-Wire Wire Line
-	6880 1020 6880 920 
-Connection ~ 6880 920 
-Wire Wire Line
-	5860 820  5920 820 
-Wire Wire Line
-	5860 920  5920 920 
-Wire Wire Line
-	5860 1020 5920 1020
-$Comp
-L Device:C_Small C14
-U 1 1 60E57356
-P 4163 1933
-F 0 "C14" H 4213 1983 50  0000 L CNN
-F 1 "0.1uF" H 4213 1883 50  0000 L CNN
-F 2 "storage:C_0.1uF" H 4163 1933 50  0001 C CNN
-F 3 "~" H 4163 1933 50  0001 C CNN
-	1    4163 1933
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4730 1482 4730 1532
-Wire Wire Line
-	6053 1746 6053 1857
-$Comp
-L SamacSys_Parts:10129381-906001BLF J2
-U 1 1 60E5719B
-P 4041 842
-F 0 "J2" H 4441 1107 50  0000 C CNN
-F 1 "10129381-906001BLF" H 4441 1016 50  0000 C CNN
-F 2 "SamacSys_Parts:HDRV6W67P254_2X3_762X483X858P" H 4691 942 50  0001 L CNN
-F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10129381.pdf" H 4691 842 50  0001 L CNN
-F 4 "HEADER DR VT TH 2X3" H 4691 742 50  0001 L CNN "Description"
-F 5 "8.58" H 4691 642 50  0001 L CNN "Height"
-F 6 "649-1012938190601BLF" H 4691 542 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/10129381-906001BLF?qs=0lQeLiL1qyZMxGRnx95Mzg%3D%3D" H 4691 442 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Amphenol" H 4691 342 50  0001 L CNN "Manufacturer_Name"
-F 9 "10129381-906001BLF" H 4691 242 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4041 842 
-	1    0    0    -1  
-$EndComp
-Text GLabel 4319 1783 2    50   Input ~ 0
-RESET
-$Comp
-L Device:R_Small R16
-U 1 1 60C926D7
-P 9528 5807
-F 0 "R16" V 9453 5657 50  0000 L CNN
-F 1 "22" V 9453 5832 50  0000 L CNN
-F 2 "storage:R_22" H 9528 5807 50  0001 C CNN
-F 3 "~" H 9528 5807 50  0001 C CNN
-	1    9528 5807
-	0    1    1    0   
-$EndComp
-Text GLabel 8878 5807 0    50   Output ~ 0
-D4-
-Text GLabel 8878 5957 0    50   Output ~ 0
-D4+
-$Comp
-L Device:C_Small C28
-U 1 1 60C926DF
-P 9028 6157
-F 0 "C28" H 9078 6207 50  0000 L CNN
-F 1 "22pF" H 9078 6107 50  0000 L CNN
-F 2 "storage:C_22pF" H 9028 6157 50  0001 C CNN
-F 3 "~" H 9028 6157 50  0001 C CNN
-	1    9028 6157
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8878 5807 9028 5807
-Connection ~ 9028 5807
-$Comp
-L power:GND #PWR0134
-U 1 1 60C926E7
-P 9303 6307
-F 0 "#PWR0134" H 9303 6057 50  0001 C CNN
-F 1 "GND" H 9303 6182 50  0000 C CNN
-F 2 "" H 9303 6307 50  0001 C CNN
-F 3 "" H 9303 6307 50  0001 C CNN
-	1    9303 6307
+L SamacSys_Parts:692221030100 J1
+U 1 1 60C98DB8
+P 1250 2800
+F 0 "J1" H 1650 3065 50  0000 C CNN
+F 1 "692221030100" H 1650 2974 50  0000 C CNN
+F 2 "WR-COM_USB_TYPE_B" H 1900 2900 50  0001 L CNN
+F 3 "http://katalog.we-online.de/em/datasheet/692221030100.pdf" H 1900 2800 50  0001 L CNN
+F 4 "WR-COM USB 3.0 Connector B horizontal Wurth Elektronik Right Angle PCB Mount Mount Female Version 3.0 Type B USB Connector, 30 V ac, 0.25A" H 1900 2700 50  0001 L CNN "Description"
+F 5 "" H 1900 2600 50  0001 L CNN "Height"
+F 6 "710-692221030100" H 1900 2500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/692221030100?qs=e5m3IbTHPW%2F1T4qlB0JfxA%3D%3D" H 1900 2400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 1900 2300 50  0001 L CNN "Manufacturer_Name"
+F 9 "692221030100" H 1900 2200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1250 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R17
-U 1 1 60C926ED
-P 9528 5957
-F 0 "R17" V 9453 5807 50  0000 L CNN
-F 1 "22" V 9453 5982 50  0000 L CNN
-F 2 "storage:R_22" H 9528 5957 50  0001 C CNN
-F 3 "~" H 9528 5957 50  0001 C CNN
-	1    9528 5957
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C30
-U 1 1 60C926F3
-P 9303 6157
-F 0 "C30" H 9353 6207 50  0000 L CNN
-F 1 "22pF" H 9353 6107 50  0000 L CNN
-F 2 "storage:C_22pF" H 9303 6157 50  0001 C CNN
-F 3 "~" H 9303 6157 50  0001 C CNN
-	1    9303 6157
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9028 5807 9428 5807
-Wire Wire Line
-	9028 5807 9028 6057
-$Comp
-L power:GND #PWR0158
-U 1 1 60C926FB
-P 9028 6307
-F 0 "#PWR0158" H 9028 6057 50  0001 C CNN
-F 1 "GND" H 9028 6182 50  0000 C CNN
-F 2 "" H 9028 6307 50  0001 C CNN
-F 3 "" H 9028 6307 50  0001 C CNN
-	1    9028 6307
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9028 6257 9028 6307
-Wire Wire Line
-	9303 6257 9303 6307
-Wire Wire Line
-	9303 6057 9303 5957
-Wire Wire Line
-	9303 5957 9428 5957
-$Comp
-L Device:R_Small R28
-U 1 1 60C92705
-P 9753 6157
-F 0 "R28" H 9628 6107 50  0000 L CNN
-F 1 "15k" H 9578 6207 50  0000 L CNN
-F 2 "storage:R_15K" H 9753 6157 50  0001 C CNN
-F 3 "~" H 9753 6157 50  0001 C CNN
-	1    9753 6157
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R30
-U 1 1 60C9270B
-P 10028 6157
-F 0 "R30" H 9903 6107 50  0000 L CNN
-F 1 "15k" H 9853 6207 50  0000 L CNN
-F 2 "storage:R_15K" H 10028 6157 50  0001 C CNN
-F 3 "~" H 10028 6157 50  0001 C CNN
-	1    10028 6157
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9628 5807 10028 5807
-Wire Wire Line
-	10028 5807 10028 6057
-Wire Wire Line
-	9628 5957 9753 5957
-Wire Wire Line
-	9753 5957 9753 6057
-$Comp
-L power:GND #PWR0159
-U 1 1 60C92715
-P 9753 6307
-F 0 "#PWR0159" H 9753 6057 50  0001 C CNN
-F 1 "GND" H 9753 6182 50  0000 C CNN
-F 2 "" H 9753 6307 50  0001 C CNN
-F 3 "" H 9753 6307 50  0001 C CNN
-	1    9753 6307
+L SamacSys_Parts:692121030100 J?
+U 1 1 60CA29D6
+P 6150 1900
+F 0 "J?" H 6550 2165 50  0000 C CNN
+F 1 "692121030100" H 6550 2074 50  0000 C CNN
+F 2 "692121030100" H 6800 2000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/692121030100.pdf" H 6800 1900 50  0001 L CNN
+F 4 "WR-COM USB 3.0 Connector A horizontal Wurth Elektronik WR-COM Series, Right Angle Version 3.0 Type A USB Connector, Through Hole Socket, 30 V ac, 0.25A" H 6800 1800 50  0001 L CNN "Description"
+F 5 "" H 6800 1700 50  0001 L CNN "Height"
+F 6 "710-692121030100" H 6800 1600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-692121030100" H 6800 1500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 6800 1400 50  0001 L CNN "Manufacturer_Name"
+F 9 "692121030100" H 6800 1300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6150 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0160
-U 1 1 60C9271B
-P 10028 6307
-F 0 "#PWR0160" H 10028 6057 50  0001 C CNN
-F 1 "GND" H 10028 6182 50  0000 C CNN
-F 2 "" H 10028 6307 50  0001 C CNN
-F 3 "" H 10028 6307 50  0001 C CNN
-	1    10028 6307
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9753 6257 9753 6307
-Wire Wire Line
-	10028 6257 10028 6307
-Text GLabel 10503 5957 2    50   Input ~ 0
-D_DS_4_+
-Wire Wire Line
-	9753 5957 10503 5957
-Connection ~ 9753 5957
-Wire Wire Line
-	10503 5807 10028 5807
-Connection ~ 10028 5807
-Connection ~ 9303 5957
-Wire Wire Line
-	8878 5957 9303 5957
-Text GLabel 10503 5807 2    50   Input ~ 0
-D_DS_4_-
-$Comp
-L Device:R_Small R14
-U 1 1 60CB2347
-P 9518 5053
-F 0 "R14" V 9443 4903 50  0000 L CNN
-F 1 "22" V 9443 5078 50  0000 L CNN
-F 2 "storage:R_22" H 9518 5053 50  0001 C CNN
-F 3 "~" H 9518 5053 50  0001 C CNN
-	1    9518 5053
-	0    1    1    0   
-$EndComp
-Text GLabel 8868 5053 0    50   Output ~ 0
-D3-
-Text GLabel 8868 5203 0    50   Output ~ 0
-D3+
-$Comp
-L Device:C_Small C27
-U 1 1 60CB234F
-P 9018 5403
-F 0 "C27" H 9068 5453 50  0000 L CNN
-F 1 "22pF" H 9068 5353 50  0000 L CNN
-F 2 "storage:C_22pF" H 9018 5403 50  0001 C CNN
-F 3 "~" H 9018 5403 50  0001 C CNN
-	1    9018 5403
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8868 5053 9018 5053
-Connection ~ 9018 5053
-$Comp
-L power:GND #PWR0161
-U 1 1 60CB2357
-P 9293 5553
-F 0 "#PWR0161" H 9293 5303 50  0001 C CNN
-F 1 "GND" H 9293 5428 50  0000 C CNN
-F 2 "" H 9293 5553 50  0001 C CNN
-F 3 "" H 9293 5553 50  0001 C CNN
-	1    9293 5553
+L SamacSys_Parts:692121030100 J?
+U 1 1 60CA3736
+P 4250 1850
+F 0 "J?" H 4650 2115 50  0000 C CNN
+F 1 "692121030100" H 4650 2024 50  0000 C CNN
+F 2 "692121030100" H 4900 1950 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/692121030100.pdf" H 4900 1850 50  0001 L CNN
+F 4 "WR-COM USB 3.0 Connector A horizontal Wurth Elektronik WR-COM Series, Right Angle Version 3.0 Type A USB Connector, Through Hole Socket, 30 V ac, 0.25A" H 4900 1750 50  0001 L CNN "Description"
+F 5 "" H 4900 1650 50  0001 L CNN "Height"
+F 6 "710-692121030100" H 4900 1550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-692121030100" H 4900 1450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 4900 1350 50  0001 L CNN "Manufacturer_Name"
+F 9 "692121030100" H 4900 1250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4250 1850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R15
-U 1 1 60CB235D
-P 9518 5203
-F 0 "R15" V 9443 5053 50  0000 L CNN
-F 1 "22" V 9443 5228 50  0000 L CNN
-F 2 "storage:R_22" H 9518 5203 50  0001 C CNN
-F 3 "~" H 9518 5203 50  0001 C CNN
-	1    9518 5203
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C29
-U 1 1 60CB2363
-P 9293 5403
-F 0 "C29" H 9343 5453 50  0000 L CNN
-F 1 "22pF" H 9343 5353 50  0000 L CNN
-F 2 "storage:C_22pF" H 9293 5403 50  0001 C CNN
-F 3 "~" H 9293 5403 50  0001 C CNN
-	1    9293 5403
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9018 5053 9418 5053
-Wire Wire Line
-	9018 5053 9018 5303
-$Comp
-L power:GND #PWR0162
-U 1 1 60CB236B
-P 9018 5553
-F 0 "#PWR0162" H 9018 5303 50  0001 C CNN
-F 1 "GND" H 9018 5428 50  0000 C CNN
-F 2 "" H 9018 5553 50  0001 C CNN
-F 3 "" H 9018 5553 50  0001 C CNN
-	1    9018 5553
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9018 5503 9018 5553
-Wire Wire Line
-	9293 5503 9293 5553
-Wire Wire Line
-	9293 5303 9293 5203
-Wire Wire Line
-	9293 5203 9418 5203
-$Comp
-L Device:R_Small R27
-U 1 1 60CB2375
-P 9743 5403
-F 0 "R27" H 9618 5353 50  0000 L CNN
-F 1 "15k" H 9568 5453 50  0000 L CNN
-F 2 "storage:R_15K" H 9743 5403 50  0001 C CNN
-F 3 "~" H 9743 5403 50  0001 C CNN
-	1    9743 5403
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R29
-U 1 1 60CB237B
-P 10018 5403
-F 0 "R29" H 9893 5353 50  0000 L CNN
-F 1 "15k" H 9843 5453 50  0000 L CNN
-F 2 "storage:R_15K" H 10018 5403 50  0001 C CNN
-F 3 "~" H 10018 5403 50  0001 C CNN
-	1    10018 5403
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9618 5053 10018 5053
-Wire Wire Line
-	10018 5053 10018 5303
-Wire Wire Line
-	9618 5203 9743 5203
-Wire Wire Line
-	9743 5203 9743 5303
-$Comp
-L power:GND #PWR0163
-U 1 1 60CB2385
-P 9743 5553
-F 0 "#PWR0163" H 9743 5303 50  0001 C CNN
-F 1 "GND" H 9743 5428 50  0000 C CNN
-F 2 "" H 9743 5553 50  0001 C CNN
-F 3 "" H 9743 5553 50  0001 C CNN
-	1    9743 5553
+L SamacSys_Parts:692121030100 J?
+U 1 1 60CA4066
+P 5100 2650
+F 0 "J?" H 5500 2915 50  0000 C CNN
+F 1 "692121030100" H 5500 2824 50  0000 C CNN
+F 2 "692121030100" H 5750 2750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/692121030100.pdf" H 5750 2650 50  0001 L CNN
+F 4 "WR-COM USB 3.0 Connector A horizontal Wurth Elektronik WR-COM Series, Right Angle Version 3.0 Type A USB Connector, Through Hole Socket, 30 V ac, 0.25A" H 5750 2550 50  0001 L CNN "Description"
+F 5 "" H 5750 2450 50  0001 L CNN "Height"
+F 6 "710-692121030100" H 5750 2350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-692121030100" H 5750 2250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 5750 2150 50  0001 L CNN "Manufacturer_Name"
+F 9 "692121030100" H 5750 2050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5100 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0164
-U 1 1 60CB238B
-P 10018 5553
-F 0 "#PWR0164" H 10018 5303 50  0001 C CNN
-F 1 "GND" H 10018 5428 50  0000 C CNN
-F 2 "" H 10018 5553 50  0001 C CNN
-F 3 "" H 10018 5553 50  0001 C CNN
-	1    10018 5553
+L SamacSys_Parts:692121030100 J?
+U 1 1 60CA4B73
+P 3600 2850
+F 0 "J?" H 4000 3115 50  0000 C CNN
+F 1 "692121030100" H 4000 3024 50  0000 C CNN
+F 2 "692121030100" H 4250 2950 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/692121030100.pdf" H 4250 2850 50  0001 L CNN
+F 4 "WR-COM USB 3.0 Connector A horizontal Wurth Elektronik WR-COM Series, Right Angle Version 3.0 Type A USB Connector, Through Hole Socket, 30 V ac, 0.25A" H 4250 2750 50  0001 L CNN "Description"
+F 5 "" H 4250 2650 50  0001 L CNN "Height"
+F 6 "710-692121030100" H 4250 2550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-692121030100" H 4250 2450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 4250 2350 50  0001 L CNN "Manufacturer_Name"
+F 9 "692121030100" H 4250 2250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3600 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9743 5503 9743 5553
-Wire Wire Line
-	10018 5503 10018 5553
-Text GLabel 10493 5203 2    50   Input ~ 0
-D_DS_3_+
-Wire Wire Line
-	9743 5203 10493 5203
-Connection ~ 9743 5203
-Wire Wire Line
-	10493 5053 10018 5053
-Connection ~ 10018 5053
-Connection ~ 9293 5203
-Wire Wire Line
-	8868 5203 9293 5203
-Text GLabel 10493 5053 2    50   Input ~ 0
-D_DS_3_-
-Text GLabel 8550 2269 2    50   Input ~ 0
-OUT3
-Wire Wire Line
-	8528 2269 8550 2269
-Text GLabel 8598 2369 2    50   Input ~ 0
-OUT4
-Wire Wire Line
-	8598 2369 8528 2369
-$Comp
-L Connector:USB_A PortC1
-U 1 1 60F8E475
-P 10748 2697
-F 0 "PortC1" H 10518 2686 50  0000 R CNN
-F 1 "USB_A" H 10518 2595 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 10898 2647 50  0001 C CNN
-F 3 " ~" H 10898 2647 50  0001 C CNN
-	1    10748 2697
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:CP_Small C31
-U 1 1 60F8E47B
-P 9448 2647
-F 0 "C31" H 9298 2647 50  0000 L CNN
-F 1 "100uF" H 9223 2572 50  0000 L CNN
-F 2 "storage:C_100uF" H 9448 2647 50  0001 C CNN
-F 3 "~" H 9448 2647 50  0001 C CNN
-	1    9448 2647
-	1    0    0    -1  
-$EndComp
-Text GLabel 9348 2497 0    50   Output ~ 0
-OUT3
-Wire Wire Line
-	9348 2497 9448 2497
-Wire Wire Line
-	9448 2497 9448 2547
-Connection ~ 9448 2497
-$Comp
-L power:GND #PWR0165
-U 1 1 60F8E485
-P 9448 2822
-F 0 "#PWR0165" H 9448 2572 50  0001 C CNN
-F 1 "GND" H 9448 2672 50  0000 C CNN
-F 2 "" H 9448 2822 50  0001 C CNN
-F 3 "" H 9448 2822 50  0001 C CNN
-	1    9448 2822
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9448 2747 9448 2822
-$Comp
-L power:GND #PWR0166
-U 1 1 60F8E48C
-P 10748 3147
-F 0 "#PWR0166" H 10748 2897 50  0001 C CNN
-F 1 "GND" H 10748 2997 50  0000 C CNN
-F 2 "" H 10748 3147 50  0001 C CNN
-F 3 "" H 10748 3147 50  0001 C CNN
-	1    10748 3147
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10748 3097 10748 3122
-Wire Wire Line
-	10848 3097 10848 3122
-Wire Wire Line
-	10848 3122 10748 3122
-Connection ~ 10748 3122
-Wire Wire Line
-	10748 3122 10748 3147
-Text GLabel 10323 2797 0    50   Output ~ 0
-D_DS_3_-
-Text GLabel 10323 2697 0    50   Output ~ 0
-D_DS_3_+
-Wire Wire Line
-	10323 2697 10448 2697
-Wire Wire Line
-	10323 2797 10448 2797
-Wire Wire Line
-	9448 2497 10448 2497
-$Comp
-L Device:CP_Small C32
-U 1 1 60FB181A
-P 9461 3603
-F 0 "C32" H 9311 3603 50  0000 L CNN
-F 1 "100uF" H 9236 3528 50  0000 L CNN
-F 2 "storage:C_100uF" H 9461 3603 50  0001 C CNN
-F 3 "~" H 9461 3603 50  0001 C CNN
-	1    9461 3603
-	1    0    0    -1  
-$EndComp
-Text GLabel 9361 3453 0    50   Output ~ 0
-OUT4
-Wire Wire Line
-	9361 3453 9461 3453
-Wire Wire Line
-	9461 3453 9461 3503
-Connection ~ 9461 3453
-$Comp
-L power:GND #PWR0167
-U 1 1 60FB1824
-P 9461 3778
-F 0 "#PWR0167" H 9461 3528 50  0001 C CNN
-F 1 "GND" H 9461 3628 50  0000 C CNN
-F 2 "" H 9461 3778 50  0001 C CNN
-F 3 "" H 9461 3778 50  0001 C CNN
-	1    9461 3778
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9461 3703 9461 3778
-$Comp
-L power:GND #PWR0168
-U 1 1 60FB182B
-P 10761 4103
-F 0 "#PWR0168" H 10761 3853 50  0001 C CNN
-F 1 "GND" H 10761 3953 50  0000 C CNN
-F 2 "" H 10761 4103 50  0001 C CNN
-F 3 "" H 10761 4103 50  0001 C CNN
-	1    10761 4103
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10761 4053 10761 4078
-Wire Wire Line
-	10861 4078 10761 4078
-Connection ~ 10761 4078
-Wire Wire Line
-	10761 4078 10761 4103
-Text GLabel 10336 3753 0    50   Output ~ 0
-D_DS_4_-
-Text GLabel 10336 3653 0    50   Output ~ 0
-D_DS_4_+
-Wire Wire Line
-	10336 3653 10461 3653
-Wire Wire Line
-	10336 3753 10461 3753
-Wire Wire Line
-	9461 3453 10461 3453
-Wire Notes Line
-	11219 4378 9044 4378
-Wire Notes Line
-	9044 4378 9044 474 
-Wire Notes Line
-	9046 1443 9046 1438
-Wire Notes Line
-	8843 1443 9046 1443
-$Comp
-L Connector:USB_A PortD1
-U 1 1 60FB1814
-P 10761 3653
-F 0 "PortD1" H 10531 3642 50  0000 R CNN
-F 1 "USB_A" H 10531 3551 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 10911 3603 50  0001 C CNN
-F 3 " ~" H 10911 3603 50  0001 C CNN
-	1    10761 3653
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10861 4053 10861 4078
-$Comp
-L Switch:SW_MEC_5E SW1
-U 1 1 60A6D30D
-P 3989 2053
-F 0 "SW1" V 4039 2043 50  0000 C CNN
-F 1 "Reset" V 3929 2013 50  0000 C CNN
-F 2 "SamacSys_Parts:FSM4JH" H 3989 2353 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3989 2353 50  0001 C CNN
-	1    3989 2053
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3989 2253 4163 2253
-Wire Wire Line
-	4163 2033 4163 2253
-Connection ~ 4163 2253
-Wire Wire Line
-	4163 2253 4163 2293
-NoConn ~ 3889 2253
-NoConn ~ 3889 1853
-$Comp
-L Device:R_Small R9
-U 1 1 60E57344
-P 4163 1616
-F 0 "R9" H 4038 1691 50  0000 L CNN
-F 1 "10k" H 4213 1566 50  0000 L CNN
-F 2 "storage:R_10K" H 4163 1616 50  0001 C CNN
-F 3 "~" H 4163 1616 50  0001 C CNN
-	1    4163 1616
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR0117
-U 1 1 60E5734A
-P 4163 1483
-F 0 "#PWR0117" H 4163 1333 50  0001 C CNN
-F 1 "+3V3" H 4178 1656 50  0000 C CNN
-F 2 "" H 4163 1483 50  0001 C CNN
-F 3 "" H 4163 1483 50  0001 C CNN
-	1    4163 1483
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4163 1483 4163 1516
-Wire Wire Line
-	3989 1853 3989 1783
-Text GLabel 4903 3257 0    50   Output ~ 0
-RESET
-Wire Wire Line
-	4953 3257 4903 3257
-Wire Wire Line
-	4319 1783 4163 1783
-Wire Wire Line
-	4163 1716 4163 1783
-Connection ~ 4163 1783
-Wire Wire Line
-	4163 1783 3989 1783
-Wire Wire Line
-	4163 1833 4163 1783
 $EndSCHEMATC
