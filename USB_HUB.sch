@@ -773,4 +773,8 @@ F 3 "~" H 8350 4750 50  0001 C CNN
 	1    8350 4750
 	0    1    1    0   
 $EndComp
+Text HLabel 6100 4350 2    50   Output ~ 0
+D4_P
+Text HLabel 6100 4450 2    50   Output ~ 0
+D4_N
 $EndSCHEMATC

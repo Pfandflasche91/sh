@@ -126,7 +126,6 @@ XTAL1
 Text Label 9350 3400 0    50   ~ 0
 XTAL2
 NoConn ~ 7100 5500
-NoConn ~ 7100 5300
 NoConn ~ 7100 4000
 NoConn ~ 7100 4100
 NoConn ~ 7100 4200
@@ -426,8 +425,6 @@ Text Label 8750 5750 0    50   ~ 0
 PC4
 Text Label 8750 5850 0    50   ~ 0
 GND
-NoConn ~ 9050 5950
-NoConn ~ 9050 6050
 Wire Wire Line
 	9550 5150 9850 5150
 Wire Wire Line
@@ -758,9 +755,9 @@ Wire Wire Line
 	1550 4450 1550 4550
 Wire Wire Line
 	1850 4450 1850 4550
-Text HLabel 1350 4000 0    50   Input ~ 0
+Text HLabel 8750 5950 0    50   Input ~ 0
 D+
-Text HLabel 1350 4100 0    50   Input ~ 0
+Text HLabel 8750 6050 0    50   Input ~ 0
 D-
 $Comp
 L Device:LED_Small D7
@@ -864,8 +861,6 @@ Wire Wire Line
 	2300 5150 2300 5100
 Wire Wire Line
 	2300 5100 2400 5100
-NoConn ~ 9550 5950
-NoConn ~ 9550 6050
 $Comp
 L power:+5V #PWR0142
 U 1 1 614C1B39
@@ -940,4 +935,24 @@ F 3 "~" H 4550 2800 50  0001 C CNN
 	1    4550 2600
 	0    -1   -1   0   
 $EndComp
+Text Label 1350 4000 0    50   ~ 0
+D_P
+Text Label 1350 4100 0    50   ~ 0
+D_N
+Wire Wire Line
+	9550 5950 9850 5950
+Text Label 9850 5950 2    50   ~ 0
+D_P
+Text Label 9850 6050 2    50   ~ 0
+D_N
+Wire Wire Line
+	9550 6050 9850 6050
+Wire Wire Line
+	8750 5950 9050 5950
+Wire Wire Line
+	8750 6050 9050 6050
+Text HLabel 7400 5300 2    50   Output ~ 0
+WS2812B
+Wire Wire Line
+	7100 5300 7400 5300
 $EndSCHEMATC

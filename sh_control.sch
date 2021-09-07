@@ -14,19 +14,474 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 5950 1700 650  450 
+S 5600 950  650  450 
 U 61280420
 F0 "USB_HUB" 50
 F1 "USB_HUB.sch" 50
-F2 "D_P" I L 5950 1750 50 
-F3 "D_M" I L 5950 1850 50 
+F2 "D_P" I L 5600 1000 50 
+F3 "D_M" I L 5600 1100 50 
+F4 "D4_P" I R 6250 1000 50 
+F5 "D4_N" I R 6250 1100 50 
 $EndSheet
 $Sheet
-S 5950 2400 650  450 
+S 5600 1850 650  450 
 U 61383560
 F0 "Atmega32" 50
 F1 "Atmega32.sch" 50
-F2 "D+" I L 5950 2450 50 
-F3 "D-" I L 5950 2550 50 
+F2 "D+" I L 5600 1900 50 
+F3 "D-" I L 5600 2000 50 
+F4 "WS2812B" I R 6250 1900 50 
 $EndSheet
+$Comp
+L max_KiCAD_lib:C10418 J6
+U 1 1 6130DB53
+P 1150 900
+F 0 "J6" V 1796 1028 50  0000 L CNN
+F 1 "C10418" V 1705 1028 50  0000 L CNN
+F 2 "C10418" H 2200 1000 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.pdf" H 2200 900 50  0001 L CNN
+F 4 "USB Connectors SMD RoHS" H 2200 800 50  0001 L CNN "Description"
+F 5 "3" H 2200 700 50  0001 L CNN "Height"
+F 6 "Jing Extension of the Electronic Co." H 2200 600 50  0001 L CNN "Manufacturer_Name"
+F 7 "C10418" H 2200 500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1150 900 
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR0144
+U 1 1 61311348
+P 1150 2200
+F 0 "#PWR0144" H 1150 1950 50  0001 C CNN
+F 1 "GND" H 1155 2027 50  0000 C CNN
+F 2 "" H 1150 2200 50  0001 C CNN
+F 3 "" H 1150 2200 50  0001 C CNN
+	1    1150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2100 1150 2150
+Wire Wire Line
+	1750 1700 1850 1700
+Wire Wire Line
+	1850 1700 1850 1800
+Wire Wire Line
+	1850 1800 1750 1800
+Wire Wire Line
+	1850 1800 1850 2150
+Wire Wire Line
+	1850 2150 1150 2150
+Connection ~ 1850 1800
+Connection ~ 1150 2150
+Wire Wire Line
+	1150 2150 1150 2200
+Wire Wire Line
+	1750 1200 1800 1200
+Wire Wire Line
+	1800 1200 1800 850 
+Wire Wire Line
+	1800 850  1150 850 
+Wire Wire Line
+	1150 850  1150 900 
+Wire Wire Line
+	1150 850  900  850 
+Wire Wire Line
+	900  850  900  900 
+Connection ~ 1150 850 
+$Comp
+L power:GND #PWR0145
+U 1 1 61312166
+P 900 900
+F 0 "#PWR0145" H 900 650 50  0001 C CNN
+F 1 "GND" H 905 727 50  0000 C CNN
+F 2 "" H 900 900 50  0001 C CNN
+F 3 "" H 900 900 50  0001 C CNN
+	1    900  900 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1750 1600
+Wire Wire Line
+	1750 1300 1950 1300
+$Comp
+L power:+5V #PWR0146
+U 1 1 61312808
+P 2350 1150
+F 0 "#PWR0146" H 2350 1000 50  0001 C CNN
+F 1 "+5V" H 2365 1323 50  0000 C CNN
+F 2 "" H 2350 1150 50  0001 C CNN
+F 3 "" H 2350 1150 50  0001 C CNN
+	1    2350 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 6131317D
+P 2100 1300
+F 0 "F1" V 1903 1300 50  0000 C CNN
+F 1 "500 mA" V 1994 1300 50  0000 C CNN
+F 2 "" V 2030 1300 50  0001 C CNN
+F 3 "~" H 2100 1300 50  0001 C CNN
+	1    2100 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1300 2350 1300
+Wire Wire Line
+	2350 1300 2350 1150
+Wire Wire Line
+	1750 1400 2650 1400
+Wire Wire Line
+	1750 1500 2650 1500
+Text Label 2650 1400 2    50   ~ 0
+D_N
+Text Label 2650 1500 2    50   ~ 0
+D_P
+$Comp
+L power:+5V #PWR0147
+U 1 1 61314365
+P 3200 1100
+F 0 "#PWR0147" H 3200 950 50  0001 C CNN
+F 1 "+5V" H 3215 1273 50  0000 C CNN
+F 2 "" H 3200 1100 50  0001 C CNN
+F 3 "" H 3200 1100 50  0001 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D15
+U 1 1 613149EF
+P 3200 1600
+F 0 "D15" V 3246 1530 50  0000 R CNN
+F 1 "LED_Small" V 3155 1530 50  0000 R CNN
+F 2 "" V 3200 1600 50  0001 C CNN
+F 3 "~" V 3200 1600 50  0001 C CNN
+	1    3200 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 613158FF
+P 3200 1300
+F 0 "R14" H 3259 1346 50  0000 L CNN
+F 1 "1.5K" H 3259 1255 50  0000 L CNN
+F 2 "" H 3200 1300 50  0001 C CNN
+F 3 "~" H 3200 1300 50  0001 C CNN
+	1    3200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1100 3200 1200
+Wire Wire Line
+	3200 1400 3200 1500
+$Comp
+L power:GND #PWR0148
+U 1 1 6131601A
+P 3200 1850
+F 0 "#PWR0148" H 3200 1600 50  0001 C CNN
+F 1 "GND" H 3205 1677 50  0000 C CNN
+F 2 "" H 3200 1850 50  0001 C CNN
+F 3 "" H 3200 1850 50  0001 C CNN
+	1    3200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1700 3200 1850
+Wire Wire Line
+	6250 1000 6550 1000
+Wire Wire Line
+	6250 1100 6550 1100
+Text Label 6550 1000 2    50   ~ 0
+D4_P
+Text Label 6550 1100 2    50   ~ 0
+D4_N
+Text Label 5300 2000 2    50   ~ 0
+D4_N
+Text Label 5300 1900 2    50   ~ 0
+D4_P
+Wire Wire Line
+	5300 1900 5600 1900
+Wire Wire Line
+	5600 2000 5300 2000
+Text Label 5300 1100 2    50   ~ 0
+D_N
+Text Label 5300 1000 2    50   ~ 0
+D_P
+Wire Wire Line
+	5300 1000 5600 1000
+Wire Wire Line
+	5300 1100 5600 1100
+$Comp
+L LED:WS2812B D10
+U 1 1 6138D77A
+P 2350 3350
+F 0 "D10" H 2600 3150 50  0000 L CNN
+F 1 "WS2812B" H 2400 3050 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2400 3050 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2450 2975 50  0001 L TNN
+	1    2350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D11
+U 1 1 6138EFDF
+P 2350 4250
+F 0 "D11" H 2650 4050 50  0000 L CNN
+F 1 "WS2812B" H 2450 3950 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2400 3950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2450 3875 50  0001 L TNN
+	1    2350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D13
+U 1 1 6138F8FD
+P 2350 6050
+F 0 "D13" H 2650 5850 50  0000 L CNN
+F 1 "WS2812B" H 2450 5750 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2400 5750 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2450 5675 50  0001 L TNN
+	1    2350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D14
+U 1 1 6138FC9B
+P 2350 6950
+F 0 "D14" H 2694 6996 50  0000 L CNN
+F 1 "WS2812B" H 2694 6905 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2400 6650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2450 6575 50  0001 L TNN
+	1    2350 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D12
+U 1 1 6138FFEF
+P 2350 5150
+F 0 "D12" H 2650 4950 50  0000 L CNN
+F 1 "WS2812B" H 2450 4850 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2400 4850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2450 4775 50  0001 L TNN
+	1    2350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 6139A6C9
+P 1750 7350
+F 0 "#PWR0149" H 1750 7100 50  0001 C CNN
+F 1 "GND" H 1755 7177 50  0000 C CNN
+F 2 "" H 1750 7350 50  0001 C CNN
+F 3 "" H 1750 7350 50  0001 C CNN
+	1    1750 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 7350 1750 7300
+Wire Wire Line
+	1750 7300 2350 7300
+Wire Wire Line
+	2350 7300 2350 7250
+Wire Wire Line
+	1750 6400 2350 6400
+Wire Wire Line
+	2350 6400 2350 6350
+Connection ~ 1750 7300
+Wire Wire Line
+	2350 5450 2350 5500
+Wire Wire Line
+	2350 5500 1750 5500
+Wire Wire Line
+	1750 5500 1750 5700
+Connection ~ 1750 6400
+Wire Wire Line
+	1750 6400 1750 6600
+Wire Wire Line
+	2350 4550 2350 4600
+Wire Wire Line
+	2350 4600 1750 4600
+Wire Wire Line
+	1750 4600 1750 4800
+Connection ~ 1750 5500
+Wire Wire Line
+	2350 3650 2350 3700
+Wire Wire Line
+	2350 3700 1750 3700
+Wire Wire Line
+	1750 3700 1750 3900
+Connection ~ 1750 4600
+$Comp
+L Device:C_Small C19
+U 1 1 613A7BAD
+P 2050 2950
+F 0 "C19" V 1821 2950 50  0000 C CNN
+F 1 "100 uF" V 1912 2950 50  0000 C CNN
+F 2 "" H 2050 2950 50  0001 C CNN
+F 3 "~" H 2050 2950 50  0001 C CNN
+	1    2050 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 613AA0B5
+P 1400 3350
+F 0 "R?" V 1204 3350 50  0000 C CNN
+F 1 "300" V 1295 3350 50  0000 C CNN
+F 2 "" H 1400 3350 50  0001 C CNN
+F 3 "~" H 1400 3350 50  0001 C CNN
+	1    1400 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 1900 6550 1900
+Text Label 6550 1900 2    50   ~ 0
+data
+Text Label 1000 3350 2    50   ~ 0
+data
+Wire Wire Line
+	1000 3350 1300 3350
+Wire Wire Line
+	1750 2950 1750 3700
+Connection ~ 1750 3700
+Wire Wire Line
+	1500 3350 2050 3350
+Wire Wire Line
+	2650 3350 2850 3350
+Wire Wire Line
+	2850 3350 2850 3800
+Wire Wire Line
+	2850 3800 1850 3800
+Wire Wire Line
+	1850 3800 1850 4250
+Wire Wire Line
+	1850 4250 2050 4250
+Wire Wire Line
+	2650 4250 2850 4250
+Wire Wire Line
+	2850 4250 2850 4700
+Wire Wire Line
+	2850 4700 1850 4700
+Wire Wire Line
+	1850 4700 1850 5150
+Wire Wire Line
+	1850 5150 2050 5150
+Wire Wire Line
+	2650 5150 2850 5150
+Wire Wire Line
+	2850 5150 2850 5600
+Wire Wire Line
+	2850 5600 1850 5600
+Wire Wire Line
+	1850 5600 1850 6050
+Wire Wire Line
+	1850 6050 2050 6050
+Wire Wire Line
+	2650 6050 2850 6050
+Wire Wire Line
+	2850 6050 2850 6500
+Wire Wire Line
+	2850 6500 1850 6500
+Wire Wire Line
+	1850 6500 1850 6950
+Wire Wire Line
+	1850 6950 2050 6950
+$Comp
+L Device:C_Small C?
+U 1 1 613B5BA4
+P 2050 3900
+F 0 "C?" V 2000 4000 50  0000 C CNN
+F 1 "100 uF" V 2150 3900 50  0000 C CNN
+F 2 "" H 2050 3900 50  0001 C CNN
+F 3 "~" H 2050 3900 50  0001 C CNN
+	1    2050 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 2950 1950 2950
+Wire Wire Line
+	2150 2950 2350 2950
+Wire Wire Line
+	2350 2950 2350 3050
+Wire Wire Line
+	2150 3900 2350 3900
+Wire Wire Line
+	2350 3900 2350 3950
+Wire Wire Line
+	1950 3900 1750 3900
+Connection ~ 1750 3900
+Wire Wire Line
+	1750 3900 1750 4600
+$Comp
+L Device:C_Small C?
+U 1 1 613BC18D
+P 2050 4800
+F 0 "C?" V 2000 4900 50  0000 C CNN
+F 1 "100 uF" V 2150 4800 50  0000 C CNN
+F 2 "" H 2050 4800 50  0001 C CNN
+F 3 "~" H 2050 4800 50  0001 C CNN
+	1    2050 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 4800 2350 4800
+Wire Wire Line
+	2350 4800 2350 4850
+Wire Wire Line
+	1950 4800 1750 4800
+Connection ~ 1750 4800
+Wire Wire Line
+	1750 4800 1750 5500
+$Comp
+L Device:C_Small C?
+U 1 1 613BFEA1
+P 2100 5700
+F 0 "C?" V 2050 5800 50  0000 C CNN
+F 1 "100 uF" V 2200 5700 50  0000 C CNN
+F 2 "" H 2100 5700 50  0001 C CNN
+F 3 "~" H 2100 5700 50  0001 C CNN
+	1    2100 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 5700 2350 5700
+Wire Wire Line
+	2350 5700 2350 5750
+Wire Wire Line
+	2000 5700 1750 5700
+Connection ~ 1750 5700
+Wire Wire Line
+	1750 5700 1750 6400
+$Comp
+L Device:C_Small C?
+U 1 1 613C3B18
+P 2100 6600
+F 0 "C?" V 2050 6700 50  0000 C CNN
+F 1 "100 uF" V 2200 6600 50  0000 C CNN
+F 2 "" H 2100 6600 50  0001 C CNN
+F 3 "~" H 2100 6600 50  0001 C CNN
+	1    2100 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 6600 1750 6600
+Connection ~ 1750 6600
+Wire Wire Line
+	1750 6600 1750 7300
+Wire Wire Line
+	2200 6600 2350 6600
+Wire Wire Line
+	2350 6600 2350 6650
+$Comp
+L power:+5V #PWR?
+U 1 1 613CA1DD
+P 2350 2850
+F 0 "#PWR?" H 2350 2700 50  0001 C CNN
+F 1 "+5V" H 2365 3023 50  0000 C CNN
+F 2 "" H 2350 2850 50  0001 C CNN
+F 3 "" H 2350 2850 50  0001 C CNN
+	1    2350 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2850 2350 2950
+Connection ~ 2350 2950
 $EndSCHEMATC
